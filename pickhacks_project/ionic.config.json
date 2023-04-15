@@ -1,0 +1,7 @@
+{
+  "name": "pickhacks_project",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
