@@ -14,3 +14,7 @@ ion-card-subtitle{
 ion-toolbar{
     --background: #05fa63;
 }
+
+ion-button{
+    color: #ffffff
+}

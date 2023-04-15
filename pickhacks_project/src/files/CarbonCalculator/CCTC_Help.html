@@ -1,0 +1,2052 @@
+<html>
+<head>
+	<title>
+		CCTC Help Document
+	</title>
+	<style type="text/css">
+		table.body{
+			text-align: justify;
+			background-color: white;
+			font-family: arial;
+		}
+		img{
+			position: relative;
+		}
+		table.caption{
+			text-align: justify;
+		}
+		td.body{
+			border-left-width: 0px;
+			border-right-width: 0px;
+			border-top-width: 0px;
+			border-bottom-width: 0px;
+		}
+		.data{
+			border-style: solid;
+			border-left-width: 2px;
+			border-right-width: 2px;
+			border-top-width: 2px;
+			border-bottom-width: 2px;
+		}
+		table{
+			border-collapse: collapse;
+		}
+		table.inner{
+			border-left-width: 0px;
+			border-right-width: 0px;
+			border-top-width: 0px;
+			border-bottom-width: 0px;
+		}
+		tr.header{
+			background-color: darkblue;
+			color: white;
+			text-align: center;
+		}
+		tr.footer{
+			background-color: darkblue;
+			color: white;
+			text-align: center;
+		}
+		tr.dataRow{
+			border-style: solid;
+			border-left-width: 2px;
+			border-right-width: 2px;
+			border-top-width: 2px;
+			border-bottom-width: 2px;
+		}
+		tr.table-head{
+			background-color: lightgrey;
+		}
+		body{
+			background-color: #696969;
+		}
+		h3{
+			text-indent: 0.5cm;
+			background-color: darkblue;
+			color: white;
+		}
+		p{
+			font-size: 12;
+			margin-left: 0.75cm;
+			margin-right: 0.75cm;
+		}
+		p.refs{
+			text-align:left;
+		}
+		p.info{
+			margin-left: 1.5cm;
+			margin-right: 1.5cm;
+		}
+		p.info_center{
+			margin-left: 1.5cm;
+			margin-right: 1.5cm;
+			text-align: center;
+		}
+		ol.contents{
+			font-size: 12;
+			margin-left: 1.25cm;
+			margin-right: 0.75cm;
+			font-weight: bold;
+		}
+		li{
+			font-size: 12;
+		}
+		td{
+			border-style: solid;
+			border-left-width: 2px;
+			border-right-width: 2px;
+			border-top-width: 2px;
+			border-bottom-width: 2px;
+			font-size: 12;
+		}
+		li{
+			margin-right: 0.75cm;
+		}
+		table.species{
+			font-size: 8;
+		}
+		input{
+			//margin-left: 0.75cm;
+			font-size: 9;
+			font-weight: bold;
+		}
+	</style>
+</head>
+
+<body>
+	<div align="center">
+	<table class="body" width="800px">
+		<tr class="header"><td class="body">
+
+			<img src="CCTC_Help_Files/HelpHeader.jpg"/>
+
+		</td></tr>
+		<tr><td class="body">
+			<br>
+			<h3>Contents</h3>
+			<p>
+				<ol class="contents">
+					<li><a href="#D1">Introduction</a></li>
+					<li><a href="#D2">Background</a></li>
+					<li><a href="#D3">CTCC Step-by-Step Instructions</a></li>
+					<ul>
+						<li><a href="#D3.1">3.1 Collecting and Entering Initial Project Data</a></li>
+						<li><a href="#D3.2">3.2 Collecting Initial Tree Data</a></li>
+						<li><a href="#D3.3">3.3 Determining Tree Biomass and Carbon Storage</a></li>
+						<li><a href="#D3.4">3.4 Determining Reduction in GHG Emissions from Tree Shade and Carbon Storage</a></li>
+						<li><a href="#D3.5">3.5 Description of CTCC Outputs</a></li>
+						<li><a href="#D3.6">3.6 Copying CTCC Outputs to a Summary Table</a></li>
+					</ul>
+					<li><a href="#D4">Methods</a></li>
+					<ul>
+						<li><a href="#D4.1">4.1 Tree Biomass and Carbon Storage</a></li>
+						<li><a href="#D4.2">4.2 Energy Conservation and Reduced Emissions</a></li>
+					</ul>
+					<li><a href="#D5">Initial Uncertainty Analysis</a></li>
+					<li><a href="#D6">Frequently Asked Questions (FAQs)</a></li>
+					<li><a href="#D7">References</a></li>
+				</ol>
+			<p>
+				Address questions not answered in what follows, including Frequently Asked Questions, to <b>psw_cufr@fs.fed.us</b>
+			</p>
+			<form action="CTCC_Help_National.pdf">
+				<input type=submit value="Help in PDF Format">
+				(<i>Recommended for printing 34 pg hardcopy</i>)
+			</form>
+			<br>
+			</p>
+		</td></tr>
+		<tr><td class="body">
+			<h3><a name="D1">1. Introduction</a></h3>
+			<p>
+				This Annex describes how to use the CUFR Tree Carbon Calculator (CTCC) to estimate the amount of biomass and carbon stored in a tree, as well as the amount sequestered annually. The CTCC provides information on the effects of tree shade on residential heating and cooling energy use for energy conservation trees. Portions of the CTCC are common to both the carbon storage and energy conservation projects; the latter has additional data and output requirements, which are denoted with “§” in the text that follows. Final sections describe the methods used to determine effects of trees on heating and cooling and potential areas of uncertainty.
+			</p>
+			<p>
+				The CTCC is intended as “proof of concept” software that is in the testing phase. It is provided "as is" without warranty of any kind. It returns results for a single tree at a time, requiring that project totals be determined externally to the calculator.
+			</p>
+			<p>
+				A note on units: Carbon reporting currently uses a hybrid of SI and English units, for example kg/MBtu and kg/gal (Air Resources Board 2007). The CTCC follows a similar convention. The most common unit for tree d.b.h. (diameter at breast height, 4.5 ft) measurement is inches, which is used in the CTCC, while outputs are given in kilograms.
+			</p>
+		</td></tr>
+		<tr><td class="body">
+			<br>
+			<h3><a name="D2">2. Background</a></h3>
+			<p>
+				The CTCC is programmed in an Excel spreadsheet. It is designed to provide carbon-related information for a single tree located in one of sixteen U.S. climate zones. The user must enter information on the size or age of the tree and species for carbon storage. Additional inputs are required for an energy conservation project. CTCC outputs can be used to estimate GHG (greenhouse gas) benefits for existing trees or to forecast future benefits.
+			</p>
+			<p>
+				Tree size data are based on growth curves developed from samples of 650 - 1000 street trees representing approximately 20 predominant species in each of the sixteen regional reference cities. The biomass equations and calculations used in the CTCC to derive total CO<sub>2</sub> stored, total stored above ground, and annual CO<sub>2</sub> sequestered are described in <b>Section 4</b> below. To determine effects of tree shade on building energy performance, over 12,000 simulations were conducted for each reference city using different combinations of tree sizes, locations, and building vintages. More detailed information on procedures can be found in each region’s Community Tree Guide (Maco et al. 2005; McPherson et al. 1999, 2000, 2001, 2002, 2003, 2004, 2006, 2006, 2006, 2007; Peper et al. 2009; Vargas et al. 2007, 2007, 2008).
+			</p>
+			<p>
+				Users should recognize that conditions vary within regions, and data from the CTCC may not accurately reflect their rate of tree growth, microclimate, or building characteristics. When conditions are different it may be necessary to apply biomass equations manually using adjusted tree growth data and perform building energy simulations with modified weather and tree data to more accurately depict effects of trees on GHGs.
+			</p>
+		</td></tr>
+		<tr><td class="body">
+			<br>
+			<h3><a name="D3">3. CTCC Step-by-Step Instructions</a></h3>
+			<p>
+				Details for obtaining, installing and running the CTCC can be found at <a href="http://www.fs.fed.us/ccrc/topics/urban-forests/">http://www.fs.fed.us/ccrc/topics/urban-forests/</a>.  In the following instructions where the CTCC application is called CarbonCalculatorNN, the NN refers to the version number
+			</p>
+			<p>
+				<h3><a name="D3.1">3.1. Collecting and Entering Initial Project Data</a></h3>
+			</p>
+			<p>
+				Certain data apply to a GHG tree project as a whole. These data are entered into shaded areas in [CarbonCalculator]CTCC (<strong>Figure 1</strong>).
+			</p>
+			<p align="center">
+				<br>
+				<img src="CCTC_Help_Files/image001.jpg"/>
+				<br>
+				<b>Figure 1. </b> Project-related data entry section of CTCC. Shaded area are cells for data input. §required for energy project
+				<br>
+				<br>
+			</p>
+			<p>
+				The rows in the CTCC data entry section represent the following:
+			</p>
+			<p>
+				<strong>Flag1: </strong> <i>Age or DBH</i>.  For new projects in which GHG benefits are being predicted into the future, age data should be used. For existing projects where trees have been measured, diameter-at-breast height (d.b.h.) data should be used. For palm species, height should be used rather than d.b.h. Refer to Appendix B of the Urban Forest Project Reporting Protocol for detailed instructions on measuring d.b.h.. Enter 0 to use tree age input and 1 to use d.b.h. input.
+			</p>
+			<p class="info">
+				Note that if you do not have a d.b.h. measuring tape you may use a common measuring tape to measure the circumference of the tree at breast height, then convert it to diameter (d.b.h.) using the following formula:
+			</p>
+			<p class="info_center">
+				d.b.h. = Circumference / &pi;
+			</p>
+			<p class="info">
+				where &pi; = 3.1416.
+				<br>For example, if your measure of tree circumference at breast height is 28 inches:
+			</p>
+			<p class="info_center">
+				d.b.h. = 28 / 3.1416
+				<br>= 8.9 in
+			</p>
+			<p class="info">
+				If you do not measure in the units required by the CTCC (inches), remember to convert your result to inches.
+			</p>
+			<p>
+				If you are entering data for palms, first enter the species code and scientific name below. The Flag1 field will automatically change to read “Tree Height Selected.” Palm d.b.h. is not indicative of overall tree size or growth, therefore tree height measurements are required. See FAQs section for more information.
+			</p>
+			<p>
+				<strong>Flag2: </strong> The CTCC can calculate the energy benefits based solely on shade or general climate benefits of trees can be included (i.e., lower summer air temperatures, reduced wind speeds). Shade benefits can be calculated with more accuracy than climate benefits. Climate benefits are associated with planting large numbers of trees in the same area so that their aggregate effect is measurable. Shade benefits are minimal for trees located more than 60-ft from buildings. Enter 0 to calculate shade benefits only. Enter 1 to calculate shade and climate benefits.
+			</p>
+			<p>
+				<b><a name="Climate">Climate zone: </a></b> Identify which of 16 regions applies to your project (<b>Fig. 2</b>). Region boundaries are approximate, and the climate of cities within each region can differ considerably. Match Cooling Degree Days and Heating Degree Days for the project location with those in <b>Table 1</b> if in doubt. Selecting the appropriate region is important because site climate influences space heating and cooling requirements and potential energy savings from trees.
+			</p>
+			<p align="center">
+				<br>
+				<br>
+				<img src="CCTC_Help_Files/image003.jpg"/><br>
+				<strong>Figure 2. </strong> Climate Zone Map.
+				<br>
+				<br>
+			</p>
+			<p align="center">
+				<br>
+				<strong>Table 1. </strong> Climate regions for CUFR Tree Carbon Calculator.
+				<table class="data" width="450px">
+					<tr class="table-head">
+						<td><b>Climate Region</b></td><td><b>Reference City</b></td><td><b>CDD<sup>1</sup></b></td><td><b>HDD<sup>2</sup></b></td>
+					</tr>
+					<tr>
+						<td>Interior West</td><td>Albuquerque, NM</td><td>1210</td><td>4362</td>
+					</tr>
+					<tr>
+						<td>Northern California Coast</td><td>Berkeley</td><td>69</td><td>3237</td>
+					</tr>
+					<tr>
+						<td>Temperate Interior West</td><td>Boise, ID</td><td>692</td><td>6001</td>
+					</tr>
+					<tr>
+						<td>Coastal Plain</td><td>Charleston, SC</td><td>2011</td><td>2209</td>
+					</tr>
+					<tr>
+						<td>South</td><td>Charlotte, NC</td><td>1514</td><td>3415</td>
+					</tr>
+					<tr>
+						<td>Inland Empire</td><td>Claremont</td><td>937</td><td>2133</td>
+					</tr>
+					<tr>
+						<td>North</td><td>Fort Collins, CO</td><td>623</td><td>6013</td>
+					</tr>
+					<tr>
+						<td>Desert Southwest</td><td>Glendale, AZ</td><td>3815</td><td>1153</td>
+					</tr>
+					<tr>
+						<td>Tropical</td><td>Honolulu, HI</td><td>4327</td><td>0</td>
+					</tr>
+					<tr>
+						<td>Lower Midwest</td><td>Indianapolis, IN</td><td>911</td><td>5690</td>
+					</tr>
+					<tr>
+						<td>Midwest</td><td>Minneapolis, MN</td><td>643</td><td>8002</td>
+					</tr>
+					<tr>
+						<td>Inland Valleys</td><td>Modesto, CA</td><td>1884</td><td>2602</td>
+					</tr>
+					<tr>
+						<td>Southern California Coast</td><td>Santa Monica, CA</td><td>470</td><td>1291</td>
+					</tr>
+					<tr>
+						<td>Pacific Northwest</td><td>Longview, WA</td><td>279</td><td>4461</td>
+					</tr>
+					<tr>
+						<td>Central Florida</td><td>Orlando, FL</td><td>3400</td><td>631</td>
+					</tr>
+					<tr>
+						<td class="data" colspan="4">
+							<sup>1</sup>CDD=Cooling Degree Days <br>
+							<sup>2</sup>HDD=Heating Degree Days <br>
+							US DOE Energy Plus Weather Data (2009) and National Renewable Energy Lab (2009) , 65°F baseline
+						</td>
+					</tr>
+				</table>
+			</p>
+			<p>
+				<br>
+				<strong><a name="EF">Emissions factors: </a></strong> For energy conservation projects only, assign utility-specific emission factors for carbon dioxide, methane, and nitrous oxide for cooling (electricity). General electricity emissions factors for each region are listed in <b>Table 2a</b>. Electricity emissions factors vary regionally because of utility-specific differences in the mix of fuels used to generate electricity. Emission factors for space heating will differ depending on heating fuel type used in each building, hence are entered in the building data section that follows. Emission factors for specific utilities can be obtained at <a href="http://www.epa.gov/cleanenergy/energy-resources/egrid/index.html">http://www.epa.gov/cleanenergy/energy-resources/egrid/index.html</a>. The Environmental Protection Agency (EPA) offers the eGRID summary tables and workbooks free of charge. Because utility choices therein may be limited, it is best to contact your local electricity supplier to obtain the most accurate values for your location.
+			</p>
+			<p align="center">
+				<br>
+				<strong>Table 2a. </strong> Electricity emissions factors per region (Maco et al. 2005; McPherson et al. 1999, 2000, 2001,2002, 2003, 2004, 2006, 2006, 2006, 2007; Peper et al. 2009; Vargas et al. 2007, 2007, 2008).<br>
+				<table class="data" width="300px">
+					<tr class="table-head">
+						<td><b>Climate Region</b></td>
+						<td><b>Reference City</b></td>
+						<td><b>Average Emissions Factor (kg/MWh)</b></td>
+					</tr>
+					<tr>
+						<td>
+							<table width="150">
+								<br>
+								<tr><td class="body"><br></td></tr>
+								<tr><td class="body">Northern California Coast</td></tr>
+								<tr><td class="body">Southern California Coast</td></tr>
+								<tr><td class="body">Inland Empire</td></tr>
+								<tr><td class="body">Inland Valleys</td></tr>
+								<tr><td class="body">Southwest Desert</td></tr>
+								<tr><td class="body">North</td></tr>
+								<tr><td class="body">Midwest</td></tr>
+								<tr><td class="body">Interior West</td></tr>
+								<tr><td class="body">Northeast</td></tr>
+								<tr><td class="body">Lower Midwest</td></tr>
+								<tr><td class="body">Tropical</td></tr>
+								<tr><td class="body">Pacific Northwest</td></tr>
+								<tr><td class="body">Temperate Interior West</td></tr>
+								<tr><td class="body">South</td></tr>
+								<tr><td class="body">Coastal Plain</td></tr>
+								<tr><td class="body">Central Florida</td></tr>
+							</table>
+						</td>
+						<td>
+							<table width="150">
+								<br>
+								<tr><td class="body"><br></td></tr>
+								<tr><td class="body">Berkeley, CA</td></tr>
+								<tr><td class="body">Santa Monica, CA</td></tr>
+								<tr><td class="body">Claremont, CA</td></tr>
+								<tr><td class="body">Modesto, CA</td></tr>
+								<tr><td class="body">Glendale, CA</td></tr>
+								<tr><td class="body">Fort Collins, CO</td></tr>
+								<tr><td class="body">Minneapolis, MN</td></tr>
+								<tr><td class="body">Albequerque, NM</td></tr>
+								<tr><td class="body">Queens, NY</td></tr>
+								<tr><td class="body">Indianapolis, IN</td></tr>
+								<tr><td class="body">Honolulu, HI</td></tr>
+								<tr><td class="body">Longview, WA</td></tr>
+								<tr><td class="body">Boise, ID</td></tr>
+								<tr><td class="body">Charlotte, NC</td></tr>
+								<tr><td class="body">Charleston, NC</td></tr>
+								<tr><td class="body">Orlando, FL</td></tr>
+							</table>
+						</td>
+						<td>
+							<table class="inner">
+								<tr><td><strong>CO<sub>2</sub></strong></td><td><strong>Methane</strong></td><td><strong>Nitrous<br>Oxide</strong></td></tr>
+								<tr><td class="body">381.5 </td><td class="body">0.0030</td><td class="body">0.00010</td></tr>
+								<tr><td class="body">381.02</td><td class="body">0.0030</td><td class="body">0.00010</td></tr>
+								<tr><td class="body">381.02</td><td class="body">0.0030</td><td class="body">0.00010</td></tr>
+								<tr><td class="body">449.1 </td><td class="body">0.0030</td><td class="body">0.00010</td></tr>
+								<tr><td class="body">453.14</td><td class="body">0.0030</td><td class="body">0.00010</td></tr>
+								<tr><td class="body">922.2 </td><td class="body">0.0030</td><td class="body">0.00010</td></tr>
+								<tr><td class="body">727.61</td><td class="body">0.0030</td><td class="body">0.00010</td></tr>
+								<tr><td class="body">1055.96</td><td class="body">0.0030</td><td class="body">0.00010</td></tr>
+								<tr><td class="body">467.2 </td><td class="body">0.0030</td><td class="body">0.00010</td></tr>
+								<tr><td class="body">988.83</td><td class="body">0.0030</td><td class="body">0.00010</td></tr>
+								<tr><td class="body">786075.6 </td><td class="body">0.0030</td><td class="body">0.00010</td></tr>
+								<tr><td class="body">662.4</td><td class="body">0.0030</td><td class="body">0.00010</td></tr>
+								<tr><td class="body">338.4</td><td class="body">0.0030</td><td class="body">0.00010</td></tr>
+								<tr><td class="body">383.3</td><td class="body">0.0030</td><td class="body">0.00010</td></tr>
+								<tr><td class="body">620.5</td><td class="body">0.0030</td><td class="body">0.00010</td></tr>
+								<tr><td class="body">n/a</td><td class="body">0.0030</td><td class="body">0.00010</td></tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</p>
+			<p align="center">
+				<br>
+				<strong>Table 2b. </strong> Natural gas emissions factors (Energy Information Administration 2009).<br>
+				<table class="data" width="400px">
+					<tr class="table-head">
+						<td><b>Fuel Type</b></td>
+						<td colspan="3"><b>Heating Emissions Factor (kg/MBtu)</b></td>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><b>CO<sub>2</sub></td>
+						<td><b>Methane</b></td>
+						<td><b>Nitrous Oxide</b></td>
+					</tr>
+					<tr>
+						<td><b>Natural Gas</b></td>
+						<td>53.1</td>
+						<td>0.0059</td>
+						<td>0.0001</td>
+					</tr>
+					<tr>
+						<td><b>Fuel Oil</b></td>
+						<td>73</td>
+						<td>0.0014</td>
+						<td>0.0001</td>
+					</tr>
+				</table>
+			</p>
+			<p>
+				<br>
+				Important greenhouse gases treated are carbon dioxide, methane, nitrous oxide, hydrofluorocarbons, perfluorocarbons, and sulfur hexafluoride. Since the latter three account for only about 1.5% of total greenhouse gas emissions in the United States (EIA 2009) and represent over 25 different gases, they are excluded from the current analysis. Methane and nitrous oxide emissions are multiplied by their respective GWPs (<b>Table 3</b>) to obtain the equivalent CO<sub>2</sub> emissions.
+			</p>
+			<p align="center">
+				<br>
+				<strong>Table 3. </strong> 100-year global warming potential (GWP) estimates of greenhouse gases (EIA 2009).
+				<table class="data" width="200px">
+					<tr class="table-head">
+						<td><strong>Gas</strong></td>
+						<td><strong>GWP</strong></td>
+					</tr>
+					<tr>
+						<td>Carbon Dioxide</td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>Methane</td>
+						<td>23</td>
+					</tr>
+					<tr>
+						<td>Nitrous Oxide</td>
+						<td>296</td>
+					</tr>
+				</table>
+			</p>
+			<br>
+		</td></tr>
+		<tr><td class="body">
+			<p>
+				<br>
+				<h3><a name="D3.2">3.2. Collecting Initial Tree Data</a></h3>
+			</p>
+			<p>
+				Data on individual trees are entered into the CTCC next. As the CTCC currently functions, trees must be entered one at a time and the results recorded by hand. To keep track of initial input data, we recommend the use of spreadsheet such as shown below (included in worksheet [CarbonCalculatorNN]Data Template) (<b>Fig. 3</b>).
+			</p>
+			<p align="center">
+				<br>
+				<img src="CCTC_Help_Files/image007.jpg"/>
+				<br>
+				<strong>Figure 3.</strong> Example template for compiling tree and building related data. § indicates fields for energy projects only.
+			</p>
+			<p>
+				<br>
+				<a name="TreeID">The columns represent the following:</a>
+				<br>
+				<br>
+				<b>TreeID:</b> This is a unique number assigned to each tree for use as individual tree identification. IDs from an existing tree inventory may be used.
+				<br>
+				<br>
+				<b>Species Code:</b> This is a 2 to 6 character code consisting of the first two letters of the genus name and the first two letters of the species name followed by two optional numbers to distinguish two species with the same four-letter code (USDA National Plants Database). The complete lists of species for the 16 climate zones are included below. There are 20-30 species in each climate zone. If you want to calculate carbon and energy results for a species not included in the list, choose the species from the same climate zone with the most similar growth rate and mature size.
+			</p>
+			<p align="center">
+				<table class="species" width="700px">
+					<tr class="table-head">
+						<td colspan="3" align="center"><br><b>Climate Zone 1 - North/Central Coast</b></td><td colspan="3" align="center"><br><b>Climate Zone 2 - South Coast</b></td>
+					</tr>
+					<tr>
+						<td><b>Sp Code</b></td><td><b>Botanic Name</b></td><td><b>Common Name</b></td> <td><b>Sp Code</b></td><td><b>Botanic Name</b></td><td><b>Common Name</b></td>
+					</tr>
+					<tr><td>	ACME	</td><td><i>	Acacia melanoxylon	</i></td><td>	Black acacia	</td><td>	CACI	</td><td><i>	Callistemon citrinus	</i></td><td>	Lemon bottlebrush	</td></tr>
+					<tr><td>	ACPA	</td><td><i>	Acer palmatum	</i></td><td>	Japanese maple	</td><td>	CEDE	</td><td><i>	Cedrus deodara	</i></td><td>	Deodar cedar	</td></tr>
+					<tr><td>	CICA	</td><td><i>	Cinnamomum camphora	</i></td><td>	Camphor tree	</td><td>	CESI3	</td><td><i>	Ceratonia siliqua	</i></td><td>	Carob	</td></tr>
+					<tr><td>	EUGL	</td><td><i>	Eucalyptus globulus	</i></td><td>	Blue gum eucalyptus	</td><td>	CICA	</td><td><i>	Cinnamomum camphora	</i></td><td>	Camphor tree	</td></tr>
+					<tr><td>	FRVE	</td><td><i>	Fraxinus velutina	</i></td><td>	Velvet ash	</td><td>	CUAN	</td><td><i>	Cupaniopsis anacardioides	</i></td><td>	Carrotwood	</td></tr>
+					<tr><td>	GIBI	</td><td><i>	Ginkgo biloba	</i></td><td>	Ginkgo	</td><td>	EUFI81	</td><td><i>	Eucalyptus ficifolia	</i></td><td>	Redflower gum	</td></tr>
+					<tr><td>	LIST	</td><td><i>	Liquidambar styraciflua	</i></td><td>	Sweetgum	</td><td>	FIMI	</td><td><i>	Ficus thonningii	</i></td><td>	Indian laurel fig	</td></tr>
+					<tr><td>	LITU	</td><td><i>	Liriodendron tulipifera	</i></td><td>	Tulip tree	</td><td>	JAMI	</td><td><i>	Jacaranda mimosifolia	</i></td><td>	Jacaranda	</td></tr>
+					<tr><td>	MAGR	</td><td><i>	Magnolia grandiflora	</i></td><td>	Southern magnolia	</td><td>	LIST	</td><td><i>	Liquidambar styraciflua	</i></td><td>	Sweetgum	</td></tr>
+					<tr><td>	PIBR2	</td><td><i>	Pinus brutia	</i></td><td>	Turkish pine; East Mediterranean pine	</td><td>	MAGR	</td><td><i>	Magnolia grandiflora	</i></td><td>	Southern magnolia	</td></tr>
+					<tr><td>	PICH	</td><td><i>	Pistacia chinensis	</i></td><td>	Chinese pistache	</td><td>	MEQU	</td><td><i>	Melaleuca quinquenervia	</i></td><td>	Cajeput tree	</td></tr>
+					<tr><td>	PICO5	</td><td><i>	Pinus contorta var. bolanderi	</i></td><td>	Bolander beach pine	</td><td>	MEEX	</td><td><i>	Metrosideros excelsius	</i></td><td>	New Zealand Christmas tree	</td></tr>
+					<tr><td>	PIRA	</td><td><i>	Pinus radiata	</i></td><td>	Monterey pine	</td><td>	PIBR2	</td><td><i>	Pinus brutia	</i></td><td>	Turkish pine; East Mediterranean pine	</td></tr>
+					<tr><td>	PIUN	</td><td><i>	Pittosporum undulatum	</i></td><td>	Victorian box	</td><td>	PICA	</td><td><i>	Pinus canariensis	</i></td><td>	Canary Island pine	</td></tr>
+					<tr><td>	PLAC	</td><td><i>	Platanus hybrida	</i></td><td>	London planetree	</td><td>	PICO5	</td><td><i>	Pinus contorta var. bolanderi	</i></td><td>	Bolander beach pine	</td></tr>
+					<tr><td>	PRCE	</td><td><i>	Prunus cerasifera	</i></td><td>	Cherry plum	</td><td>	PIUN	</td><td><i>	Pittosporum undulatum	</i></td><td>	Victorian box	</td></tr>
+					<tr><td>	PYCA	</td><td><i>	Pyrus calleryana	</i></td><td>	Callery pear	</td><td>	PLAC	</td><td><i>	Platanus X acerifolia	</i></td><td>	London plane	</td></tr>
+					<tr><td>	PYKA	</td><td><i>	Pyrus kawakamii	</i></td><td>	Evergreen pear	</td><td>	POMA	</td><td><i>	Podocarpus macrophyllus	</i></td><td>	Yew podocarpus	</td></tr>
+					<tr><td>	QUAG	</td><td><i>	Quercus agrifolia	</i></td><td>	Coast live oak	</td><td>	SCTE	</td><td><i>	Schinus terebinthifolius	</i></td><td>	Brazilian pepper	</td></tr>
+					<tr><td>	ROPS	</td><td><i>	Robinia pseudoacacia	</i></td><td>	Black locust	</td><td>	TRCO	</td><td><i>	Tristaniopsis conferta	</i></td><td>	Brisbane box	</td></tr>
+					<tr><td>	SESE	</td><td><i>	Sequoia sempervirens	</i></td><td>	Coast redwood	</td><td>		</td><td><i>		</i></td><td>		</td></tr>
+					<tr><td>	ULAM	</td><td><i>	Ulmus americana	</i></td><td>	American elm	</td><td>		</td><td><i>		</i></td><td>		</td></tr>
+					<tr><td>	ULPA	</td><td><i>	Ulmus parvifolia	</i></td><td>	Chinese elm	</td><td>		</td><td><i>		</i></td><td>		</td></tr>
+					<br>
+
+					<tr class="table-head">
+						<td colspan="3" align="center"><br><b>Climate Zone 3 - Inland Empire</b></td><td colspan="3" align="center"><br><b>Climate Zone 4 - Central Valley</b></td>
+					</tr>
+					<tr>
+						<td><b>Sp Code</b></td><td><b>Botanic Name</b></td><td><b>Common Name</b></td> <td><b>Sp Code</b></td><td><b>Botanic Name</b></td><td><b>Common Name</b></td>
+					</tr>
+					<tr><td>	BRPO	</td><td><i>	Brachychiton populneus	</i></td><td>	Bottle tree	</td><td>	ACSA1	</td><td><i>	Acer saccharinum	</i></td><td>	Silver maple	</td></tr>
+					<tr><td>	CICA	</td><td><i>	Cinnamomum camphora	</i></td><td>	Camphor tree	</td><td>	BEPE	</td><td><i>	Betula pendula	</i></td><td>	European white birch	</td></tr>
+					<tr><td>	EUSI	</td><td><i>	Eucalyptus sideroxylon	</i></td><td>	Red ironbark	</td><td>	CESI4	</td><td><i>	Celtis sinensis	</i></td><td>	Chinese hackberry	</td></tr>
+					<tr><td>	FRUH	</td><td><i>	Fraxinus uhdei	</i></td><td>	Shamel ash	</td><td>	CICA	</td><td><i>	Cinnamomum camphora	</i></td><td>	Camphor tree	</td></tr>
+					<tr><td>	FRVE	</td><td><i>	Fraxinus velutina 'Modesto'	</i></td><td>	Modesto ash	</td><td>	FREX_H	</td><td><i>	Fraxinus excelsior 'Hessei'	</i></td><td>	Hesse ash	</td></tr>
+					<tr><td>	GIBI	</td><td><i>	Ginkgo biloba	</i></td><td>	Ginkgo	</td><td>	FRHO	</td><td><i>	Fraxinus holotricha	</i></td><td>	Moraine ash	</td></tr>
+					<tr><td>	JAMI	</td><td><i>	Jacaranda mimosifolia	</i></td><td>	Jacaranda	</td><td>	FRAN_R	</td><td><i>	Fraxinus angustifolia 'Raywood'	</i></td><td>	Raywood ash	</td></tr>
+					<tr><td>	LAIN	</td><td><i>	Lagerstroemia indica	</i></td><td>	Common crapemyrtle	</td><td>	FRPE_M	</td><td><i>	Fraxinus pennsylvanica 'Marshall'	</i></td><td>	Marshall ash	</td></tr>
+					<tr><td>	LIST	</td><td><i>	Liquidambar styraciflua	</i></td><td>	Sweetgum	</td><td>	FRVE	</td><td><i>	Fraxinus velutina 'Modesto'	</i></td><td>	Modesto ash	</td></tr>
+					<tr><td>	LITU	</td><td><i>	Liriodendron tulipifera	</i></td><td>	Tulip tree	</td><td>	GIBI	</td><td><i>	Ginkgo biloba	</i></td><td>	Ginkgo	</td></tr>
+					<tr><td>	MAGR	</td><td><i>	Magnolia grandiflora	</i></td><td>	Southern magnolia	</td><td>	GLTR	</td><td><i>	Gleditsia triacanthos	</i></td><td>	Honeylocust	</td></tr>
+					<tr><td>	PIBR2	</td><td><i>	Pinus brutia	</i></td><td>	Turkish pine; East Mediterranean pine	</td><td>	KOPA	</td><td><i>	Koelreuteria paniculata	</i></td><td>	Goldenrain tree	</td></tr>
+					<tr><td>	PICA	</td><td><i>	Pinus canariensis	</i></td><td>	Canary Island pine	</td><td>	LAIN	</td><td><i>	Lagerstroemia indica	</i></td><td>	Common crapemyrtle	</td></tr>
+					<tr><td>	PICH	</td><td><i>	Pistacia chinensis	</i></td><td>	Chinese pistache	</td><td>	LIST	</td><td><i>	Liquidambar styraciflua	</i></td><td>	Sweetgum	</td></tr>
+					<tr><td>	PICO5	</td><td><i>	Pinus contorta var. bolanderi	</i></td><td>	Bolander beach pine	</td><td>	MAGR	</td><td><i>	Magnolia grandiflora	</i></td><td>	Southern magnolia	</td></tr>
+					<tr><td>	PLAC	</td><td><i>	Platanus X acerifolia	</i></td><td>	London plane	</td><td>	PIBR2	</td><td><i>	Pinus brutia	</i></td><td>	Turkish pine; East Mediterranean pine	</td></tr>
+					<tr><td>	PLRA	</td><td><i>	Platanus racemosa	</i></td><td>	California sycamore	</td><td>	PICH	</td><td><i>	Pistacia chinensis	</i></td><td>	Chinese pistache	</td></tr>
+					<tr><td>	PYCA	</td><td><i>	Pyrus calleryana	</i></td><td>	Callery pear	</td><td>	PICO5	</td><td><i>	Pinus contorta var. bolanderi	</i></td><td>	Bolander beach pine	</td></tr>
+					<tr><td>	QUAG	</td><td><i>	Quercus agrifolia	</i></td><td>	Coast live oak	</td><td>	PIRA	</td><td><i>	Pinus radiata	</i></td><td>	Monterey pine	</td></tr>
+					<tr><td>	QUIL2	</td><td><i>	Quercus ilex	</i></td><td>	Holly oak	</td><td>	PITH	</td><td><i>	Pinus thunbergiana	</i></td><td>	Japanese black pine	</td></tr>
+					<tr><td>	SCMO	</td><td><i>	Schinus molle	</i></td><td>	California pepper tree	</td><td>	PLAC	</td><td><i>	Platanus hybrida	</i></td><td>	London planetree	</td></tr>
+					<tr><td>	SCTE	</td><td><i>	Schinus terebinthifolius	</i></td><td>	Brazilian pepper tree	</td><td>	PYCA_B	</td><td><i>	Pyrus calleryana 'Bradford'	</i></td><td>	Callery pear 'Bradford'	</td></tr>
+					<tr><td>		</td><td><i>		</i></td><td>		</td><td>	PYKA	</td><td><i>	Pyrus kawakamii	</i></td><td>	Evergreen pear	</td></tr>
+					<tr><td>		</td><td><i>		</i></td><td>		</td><td>	QUIL2	</td><td><i>	Quercus ilex	</i></td><td>	Roble negro	</td></tr>
+					<tr><td>		</td><td><i>		</i></td><td>		</td><td>	ZESE	</td><td><i>	Zelkova serrata	</i></td><td>	Japanese zelkova	</td></tr>
+
+					<br>
+
+					<tr class="table-head">
+						<td colspan="3" align="center"><br><b>Climate Zone 5 - Desert</b></td><td colspan="3" align="center"><br><b>Climate Zone 6 - Mountains</b></td>
+					</tr>
+					<tr>
+						<td><b>Sp Code</b></td><td><b>Botanic Name</b></td><td><b>Common Name</b></td> <td><b>Sp Code</b></td><td><b>Botanic Name</b></td><td><b>Common Name</b></td>
+					</tr>
+					<tr><td>	ACFA	</td><td><i>	Acacia farnesiana						</i></td><td>	Sweet acacia	</td><td>	ACPL	</td><td><i>	Acer platanoides	</i></td><td>	Norway maple	</td></tr>
+					<tr><td>	ACSA3	</td><td><i>	Acacia salicina							</i></td><td>	Willow acacia	</td><td>	ACSA1	</td><td><i>	Acer saccharinum	</i></td><td>	Silver maple	</td></tr>
+					<tr><td>	BRPO	</td><td><i>	Brachychiton populneus					</i></td><td>	Bottle tree	</td><td>	ACSA2	</td><td><i>	Acer saccharum	</i></td><td>	Sugar maple	</td></tr>
+					<tr><td>	CEFL	</td><td><i>	Cercidium floridum						</i></td><td>	Blue palo verde	</td><td>	CEOC	</td><td><i>	Celtis occidentalis	</i></td><td>	Northern hackberry	</td></tr>
+					<tr><td>	CHLI	</td><td><i>	Chilopsis linearis						</i></td><td>	Desert willow	</td><td>	FRAM	</td><td><i>	Fraxinus americana	</i></td><td>	White ash	</td></tr>
+					<tr><td>	EUMI2	</td><td><i>	Eucalyptus microtheca					</i></td><td>	Coolibah gum	</td><td>	FRPE	</td><td><i>	Fraxinus pennsylvanica	</i></td><td>	Green ash	</td></tr>
+					<tr><td>	FRUH	</td><td><i>	Fraxinus uhdei							</i></td><td>	Evergreen ash	</td><td>	GLTR	</td><td><i>	Gleditsia triacanthos	</i></td><td>	Honeylocust	</td></tr>
+					<tr><td>	FRVE	</td><td><i>	Fraxinus velutina						</i></td><td>	Velvet ash	</td><td>	GYDI	</td><td><i>	Gymnocladus dioica	</i></td><td>	Kentucky coffee tree	</td></tr>
+					<tr><td>	MOAL	</td><td><i>	Morus alba								</i></td><td>	White mulberry	</td><td>	ILOP	</td><td><i>	Ilex opaca	</i></td><td>	American holly	</td></tr>
+					<tr><td>	OLEU	</td><td><i>	Olea europaea							</i></td><td>	Olive	</td><td>	MAGR	</td><td><i>	Magnolia grandiflora	</i></td><td>	Southern magnolia	</td></tr>
+					<tr><td>	PAAC	</td><td><i>	Parkinsonia aculeata					</i></td><td>	Jerusalem thorn	</td><td>	MA2	</td><td><i>	Malus sp.	</i></td><td>	Apple	</td></tr>
+					<tr><td>	PIBR2	</td><td><i>	Pinus brutia							</i></td><td>	Turkish pine; East Mediterranean pine	</td><td>	PICO5	</td><td><i>	Pinus contorta var. bolanderi	</i></td><td>	Bolander beach pine	</td></tr>
+					<tr><td>	PICH	</td><td><i>	Pistacia chinensis						</i></td><td>	Chinese pistache	</td><td>	PINI	</td><td><i>	Pinus nigra	</i></td><td>	Austrian pine	</td></tr>
+					<tr><td>	PICO5	</td><td><i>	Pinus contorta var. bolanderi			</i></td><td>	Bolander beach pine	</td><td>	PIPO	</td><td><i>	Pinus ponderosa	</i></td><td>	Ponderosa pine	</td></tr>
+					<tr><td>	PIEL2	</td><td><i>	Pinus eldarica							</i></td><td>	Afghan pine	</td><td>	PIPU	</td><td><i>	Picea  pungens	</i></td><td>	Blue spruce	</td></tr>
+					<tr><td>	PIHA	</td><td><i>	Pinus halepensis						</i></td><td>	Aleppo pine	</td><td>	POSA	</td><td><i>	Populus sargentii	</i></td><td>	Plains cottonwood	</td></tr>
+					<tr><td>	PRCH	</td><td><i>	Prosopis chilensis						</i></td><td>	Chilean mesquite	</td><td>	PR	</td><td><i>	Prunus species	</i></td><td>	Plum	</td></tr>
+					<tr><td>	QUVI	</td><td><i>	Quercus virginiana						</i></td><td>	Live oak	</td><td>	PY	</td><td><i>	Pyrus species	</i></td><td>	Pear	</td></tr>
+					<tr><td>	RHLA	</td><td><i>	Rhus lancea								</i></td><td>	African sumac	</td><td>	QUMA1	</td><td><i>	Quercus macrocarpa	</i></td><td>	Bur oak	</td></tr>
+					<tr><td>	ULPA	</td><td><i>	Ulmus parvifolia						</i></td><td>	Chinese elm	</td><td>	QUNI	</td><td><i>	Quercus nigra	</i></td><td>	Water oak	</td></tr>
+					<tr><td>			</td><td><i>											</i></td><td>		</td><td>	TIAM	</td><td><i>	Tilia americana	</i></td><td>	American basswood	</td></tr>
+					<tr><td>			</td><td><i>											</i></td><td>		</td><td>	TICO	</td><td><i>	Tilia cordata	</i></td><td>	Littleleaf linden	</td></tr>
+					<tr><td>			</td><td><i>											</i></td><td>		</td><td>	ULAM	</td><td><i>	Ulmus americana	</i></td><td>	American elm	</td></tr>
+					<tr><td>			</td><td><i>											</i></td><td>		</td><td>	ULPU	</td><td><i>	Ulmus pumila	</i></td><td>	Siberian elm	</td></tr>
+
+					<br>
+					<tr class="table-head">
+						<td colspan="3" align="center"><br><b>Climate Zone 7 - Northeast</b></td><td colspan="3" align="center"><br><b>Climate Zone 8 - Temperate Interior West</b></td>
+					</tr>
+					<tr>
+						<td><b>Sp Code</b></td><td><b>Botanic Name</b></td><td><b>Common Name</b></td> <td><b>Sp Code</b></td><td><b>Botanic Name</b></td><td><b>Common Name</b></td>
+					</tr>
+					<tr><td>	ACPL	</td><td><i>	Acer platanoides						</i></td><td>	Norway maple						</td><td>	ACPL	</td><td><i>	Acer platanoides					</i></td><td>	Norway maple				</td></tr>
+					<tr><td>	ACRU	</td><td><i>	Acer rubrum								</i></td><td>	Red maple							</td><td>	ACSA1	</td><td><i>	Acer saccharinum					</i></td><td>	Silver maple				</td></tr>
+					<tr><td>	ACSA1	</td><td><i>	Acer saccharinum						</i></td><td>	Silver maple						</td><td>	ACSA2	</td><td><i>	Acer saccharum						</i></td><td>	Sugar maple					</td></tr>
+					<tr><td>	ACSA2	</td><td><i>	Acer saccharum							</i></td><td>	Sugar maple							</td><td>	CASP	</td><td><i>	Catalpa speciosa					</i></td><td>	Northern catalpa			</td></tr>
+					<tr><td>	AEHI	</td><td><i>	Aesculus hippocastanum					</i></td><td>	Horsechestnut						</td><td>	CR		</td><td><i>	Crataegus sp.						</i></td><td>	Hawthorn					</td></tr>
+					<tr><td>	FRPE	</td><td><i>	Fraxinus pennsylvanica					</i></td><td>	Green ash							</td><td>	FRAM	</td><td><i>	Fraxinus americana					</i></td><td>	White ash					</td></tr>
+					<tr><td>	GIBI	</td><td><i>	Ginkgo biloba							</i></td><td>	Ginkgo								</td><td>	FRPE	</td><td><i>	Fraxinus pennsylvanica				</i></td><td>	Green ash					</td></tr>
+					<tr><td>	GLTR	</td><td><i>	Gleditsia triacanthos					</i></td><td>	Honeylocust							</td><td>	GLTR	</td><td><i>	Gleditsia triacanthos				</i></td><td>	Honeylocust					</td></tr>
+					<tr><td>	ILOP	</td><td><i>	Ilex opaca								</i></td><td>	American holly						</td><td>	ILOP	</td><td><i>	Ilex opaca							</i></td><td>	American holly				</td></tr>
+					<tr><td>	JUVI	</td><td><i>	Juniperus virginiana					</i></td><td>	Eastern red cedar					</td><td>	JUNI	</td><td><i>	Juglans nigra						</i></td><td>	Black walnut				</td></tr>
+					<tr><td>	LIST	</td><td><i>	Liquidambar styraciflua					</i></td><td>	Sweetgum							</td><td>	LIST	</td><td><i>	Liquidambar styraciflua				</i></td><td>	Sweetgum					</td></tr>
+					<tr><td>	MA2		</td><td><i>	Malus sp.								</i></td><td>	Apple								</td><td>	MA2		</td><td><i>	Malus sp.							</i></td><td>	Apple						</td></tr>
+					<tr><td>	MAGR	</td><td><i>	Magnolia grandiflora					</i></td><td>	Southern magnolia					</td><td>	PIED	</td><td><i>	Pinus edulis						</i></td><td>	Pinyon pine					</td></tr>
+					<tr><td>	PICO5	</td><td><i>	Pinus contorta var. bolanderi			</i></td><td>	Bolander beach pine					</td><td>	PIPU	</td><td><i>	Picea pungens						</i></td><td>	Blue spruce					</td></tr>
+					<tr><td>	PIST	</td><td><i>	Pinus strobus							</i></td><td>	Eastern white pine					</td><td>	PISY	</td><td><i>	Pinus sylvestris					</i></td><td>	Scotch pine					</td></tr>
+					<tr><td>	PLAC	</td><td><i>	Platanus hybrida						</i></td><td>	London planetree					</td><td>	PLAC	</td><td><i>	Platanus hybrida					</i></td><td>	London planetree			</td></tr>
+					<tr><td>	PRSE2	</td><td><i>	Prunus serrulata						</i></td><td>	Kwanzan cherry						</td><td>	PLOC	</td><td><i>	Platanus occidentalis				</i></td><td>	American sycamore			</td></tr>
+					<tr><td>	PYCA	</td><td><i>	Pyrus calleryana						</i></td><td>	Callery pear						</td><td>	PYCA	</td><td><i>	Pyrus calleryana					</i></td><td>	Callery pear				</td></tr>
+					<tr><td>	QUPA	</td><td><i>	Quercus palustris						</i></td><td>	Pin oak								</td><td>	QURU	</td><td><i>	Quercus rubra						</i></td><td>	Northern red oak			</td></tr>
+					<tr><td>	QUPH	</td><td><i>	Quercus phellos							</i></td><td>	Willow oak							</td><td>	ROPS	</td><td><i>	Robinia pseudoacacia				</i></td><td>	Black locust				</td></tr>
+					<tr><td>	QURU	</td><td><i>	Quercus rubra							</i></td><td>	Northern red oak					</td><td>	TIAM	</td><td><i>	Tilia americana						</i></td><td>	American basswood			</td></tr>
+					<tr><td>	SAPA	</td><td><i>	Sabal palmetto							</i></td><td>	Cabbage palmetto					</td><td>	ULPU	</td><td><i>	Ulmus pumila						</i></td><td>	Siberian elm				</td></tr>
+					<tr><td>	TICO	</td><td><i>	Tilia cordata							</i></td><td>	Littleleaf linden					</td><td>			</td><td><i>										</i></td><td>								</td></tr>
+					<tr><td>	TITO	</td><td><i>	Tilia tomentosa							</i></td><td>	Silver linden						</td><td>			</td><td><i>										</i></td><td>								</td></tr>
+					<tr><td>	ULAM	</td><td><i>	Ulmus americana							</i></td><td>	American elm						</td><td>			</td><td><i>										</i></td><td>								</td></tr>
+					<tr><td>	ULPA	</td><td><i>	Ulmus parvifolia						</i></td><td>	Chinese elm							</td><td>			</td><td><i>										</i></td><td>								</td></tr>
+					<tr><td>	ZESE	</td><td><i>	Zelkova serrata							</i></td><td>	Japanese zelkova					</td><td>			</td><td><i>										</i></td><td>								</td></tr>
+
+
+					<br>
+					<tr class="table-head">
+						<td colspan="3" align="center"><br><b>Climate Zone 9 - Pacific Northwest</b></td><td colspan="3" align="center"><br><b>Climate Zone 10 - Interior West</b></td>
+					</tr>
+					<tr>
+						<td><b>Sp Code</b></td><td><b>Botanic Name</b></td><td><b>Common Name</b></td> <td><b>Sp Code</b></td><td><b>Botanic Name</b></td><td><b>Common Name</b></td>
+					</tr>
+					<tr><td>	ACMA	</td><td><i>	Acer macrophyllum						</i></td><td>	Bigleaf maple						</td><td>	CHLI	</td><td><i>	Chilopsis linearis						</i></td><td>	Desertwillow			</td></tr>
+					<tr><td>	ACPL	</td><td><i>	Acer platanoides						</i></td><td>	Norway maple						</td><td>	ELAN	</td><td><i>	Elaeagnus angustifolia					</i></td><td>	Russian olive			</td></tr>
+					<tr><td>	ACRU	</td><td><i>	Acer rubrum								</i></td><td>	Red maple							</td><td>	EUGL	</td><td><i>	Eucalyptus globulus						</i></td><td>	Blue gum eucalyptus		</td></tr>
+					<tr><td>	ACSA2	</td><td><i>	Acer saccharum							</i></td><td>	Sugar maple							</td><td>	EUMI2	</td><td><i>	Eucalyptus microtheca					</i></td><td>	Coolibah tree			</td></tr>
+					<tr><td>	BEPE	</td><td><i>	Betula pendula							</i></td><td>	European white birch				</td><td>	FRAM	</td><td><i>	Fraxinus americana						</i></td><td>	White ash				</td></tr>
+					<tr><td>	CABE_F	</td><td><i>	Carpinus betulus 'Fastigiata'			</i></td><td>	Columnar hornbeam					</td><td>	FRAN2	</td><td><i>	Fraxinus angustifolia					</i></td><td>	Raywood ash				</td></tr>
+					<tr><td>	CADE2	</td><td><i>	Calocedrus decurrens					</i></td><td>	Incense cedar						</td><td>	FRPE	</td><td><i>	Fraxinus pennsylvanica					</i></td><td>	Green ash				</td></tr>
+					<tr><td>	CRLA80	</td><td><i>	Crataegus laevigata						</i></td><td>	Smooth hawthorn						</td><td>	FRVE	</td><td><i>	Fraxinus velutina						</i></td><td>	Velvet ash				</td></tr>
+					<tr><td>	FASYAT	</td><td><i>	Fagus sylvatica 'atropunicea'			</i></td><td>	Purple leaf beech					</td><td>	GLTR	</td><td><i>	Gleditsia triacanthos					</i></td><td>	Honeylocust				</td></tr>
+					<tr><td>	FRLA	</td><td><i>	Fraxinus latifolia						</i></td><td>	Oregon ash							</td><td>	ILOP	</td><td><i>	Ilex opaca								</i></td><td>	American holly			</td></tr>
+					<tr><td>	ILOP	</td><td><i>	Ilex opaca								</i></td><td>	American holly						</td><td>	KOPA	</td><td><i>	Koelreuteria paniculata					</i></td><td>	Goldenrain tree			</td></tr>
+					<tr><td>	LIST	</td><td><i>	Liquidambar styraciflua					</i></td><td>	Sweetgum							</td><td>	MA2		</td><td><i>	Malus sp.								</i></td><td>	Apple					</td></tr>
+					<tr><td>	MOAL	</td><td><i>	Morus alba								</i></td><td>	White mulberry						</td><td>	PHCA	</td><td><i>	Phoenix canariensis						</i></td><td>	Canary Island date palm	</td></tr>
+					<tr><td>	PHCA	</td><td><i>	Phoenix canariensis						</i></td><td>	Canary Island date palm				</td><td>	PHDA4	</td><td><i>	Phoenix dactylifera						</i></td><td>	Date palm				</td></tr>
+					<tr><td>	PHDA4	</td><td><i>	Phoenix dactylifera						</i></td><td>	Date palm							</td><td>	PICH	</td><td><i>	Pistacia chinensis						</i></td><td>	Chinese pistache		</td></tr>
+					<tr><td>	PICO5	</td><td><i>	Pinus contorta var. bolanderi			</i></td><td>	Bolander beach pine					</td><td>	PIED	</td><td><i>	Pinus edulis							</i></td><td>	Pinyon pine				</td></tr>
+					<tr><td>	POTR2	</td><td><i>	Populus balsamifera ssp. trichocarpa	</i></td><td>	Black cottonwood					</td><td>	PINI	</td><td><i>	Pinus nigra								</i></td><td>	Austrian pine			</td></tr>
+					<tr><td>	PRCEKW	</td><td><i>	Prunus cerasifera 'Thundercloud'		</i></td><td>	Thundercloud purple plum			</td><td>	PIPO	</td><td><i>	Pinus ponderosa							</i></td><td>	Ponderosa pine			</td></tr>
+					<tr><td>	PRSE2	</td><td><i>	Prunus serrulata						</i></td><td>	Kwanzan cherry						</td><td>	PISY	</td><td><i>	Pinus sylvestris						</i></td><td>	Scotch pine				</td></tr>
+					<tr><td>	PSME	</td><td><i>	Pseudotsuga menziesii					</i></td><td>	Douglas fir							</td><td>	PLAC	</td><td><i>	Platanus hybrida						</i></td><td>	London planetree		</td></tr>
+					<tr><td>	PYAN	</td><td><i>	Malus angustifolia						</i></td><td>	Southern crabapple					</td><td>	POAN	</td><td><i>	Populus angustifolia					</i></td><td>	Narrowleaf cottonwood	</td></tr>
+					<tr><td>	PYKA	</td><td><i>	Pyrus kawakamii							</i></td><td>	Evergreen pear						</td><td>	POFR	</td><td><i>	Populus fremontii						</i></td><td>	Fremont cottonwood		</td></tr>
+					<tr><td>	QUAG	</td><td><i>	Quercus agrifolia						</i></td><td>	Coast live oak						</td><td>	PRCE	</td><td><i>	Prunus cerasifera						</i></td><td>	Cherry plum				</td></tr>
+					<tr><td>	QURU	</td><td><i>	Quercus rubra							</i></td><td>	Northern red oak					</td><td>	PYCA	</td><td><i>	Pyrus calleryana						</i></td><td>	Callery pear			</td></tr>
+					<tr><td>	TIAM	</td><td><i>	Tilia americana							</i></td><td>	American basswood					</td><td>	ULPU	</td><td><i>	Ulmus pumila							</i></td><td>	Siberian elm			</td></tr>
+					<tr><td>	TICO	</td><td><i>	Tilia cordata							</i></td><td>	Littleleaf linden					</td><td>	WARO	</td><td><i>	Washingtonia robusta					</i></td><td>	Mexican fan palm		</td></tr>
+					<tr><td>	ULAM	</td><td><i>	Ulmus americana							</i></td><td>	American elm						</td><td>			</td><td><i>											</i></td><td>							</td></tr>
+					<tr><td>	WARO	</td><td><i>	Washingtonia robusta					</i></td><td>	Mexican fan palm					</td><td>			</td><td><i>											</i></td><td>							</td></tr>
+
+
+					<br>
+					<tr class="table-head">
+						<td colspan="3" align="center"><br><b>Climate Zone 11 - Coastal Plain</b></td><td colspan="3" align="center"><br><b>Climate Zone 12 - Midwest</b></td>
+					</tr>
+					<tr>
+						<td><b>Sp Code</b></td><td><b>Botanic Name</b></td><td><b>Common Name</b></td> <td><b>Sp Code</b></td><td><b>Botanic Name</b></td><td><b>Common Name</b></td>
+					</tr>
+					<tr><td>	ACRU	</td><td><i>	Acer rubrum								</i></td><td>	Red maple								</td><td>	ACNE	</td><td><i>	Acer negundo						</i></td><td>	Boxelder				</td></tr>
+					<tr><td>	BUCA	</td><td><i>	Butia capitata							</i></td><td>	Jelly palm								</td><td>	ACPL	</td><td><i>	Acer platanoides					</i></td><td>	Norway maple			</td></tr>
+					<tr><td>	CAIL	</td><td><i>	Carya illinoinensis						</i></td><td>	Pecan									</td><td>	ACRU	</td><td><i>	Acer rubrum							</i></td><td>	Red maple				</td></tr>
+					<tr><td>	CELA	</td><td><i>	Celtis laevigata						</i></td><td>	Sugarberry								</td><td>	ACSA1	</td><td><i>	Acer saccharinum					</i></td><td>	Silver maple			</td></tr>
+					<tr><td>	COFL	</td><td><i>	Cornus florida							</i></td><td>	Flowering dogwood						</td><td>	ACSA2	</td><td><i>	Acer saccharum						</i></td><td>	Sugar maple				</td></tr>
+					<tr><td>	GLTR	</td><td><i>	Gleditsia triacanthos					</i></td><td>	Honeylocust								</td><td>	CEOC	</td><td><i>	Celtis occidentalis					</i></td><td>	Northern hackberry		</td></tr>
+					<tr><td>	ILOP	</td><td><i>	Ilex opaca								</i></td><td>	American holly							</td><td>	FRAM	</td><td><i>	Fraxinus americana					</i></td><td>	White ash				</td></tr>
+					<tr><td>	JUVI	</td><td><i>	Juniperus virginiana					</i></td><td>	Eastern red cedar						</td><td>	FRPE	</td><td><i>	Fraxinus pennsylvanica				</i></td><td>	Green ash				</td></tr>
+					<tr><td>	LAIN	</td><td><i>	Lagerstroemia indica					</i></td><td>	Common crapemyrtle						</td><td>	GIBI	</td><td><i>	Ginkgo biloba						</i></td><td>	Ginkgo					</td></tr>
+					<tr><td>	LIST	</td><td><i>	Liquidambar styraciflua					</i></td><td>	Sweetgum								</td><td>	GLTR	</td><td><i>	Gleditsia triacanthos				</i></td><td>	Honeylocust				</td></tr>
+					<tr><td>	MAGR	</td><td><i>	Magnolia grandiflora					</i></td><td>	Southern magnolia						</td><td>	ILOP	</td><td><i>	Ilex opaca							</i></td><td>	American holly			</td></tr>
+					<tr><td>	PHCA	</td><td><i>	Phoenix canariensis						</i></td><td>	Canary Island date palm					</td><td>	MA2		</td><td><i>	Malus sp.							</i></td><td>	Apple					</td></tr>
+					<tr><td>	PICO5	</td><td><i>	Pinus contorta var. bolanderi			</i></td><td>	Bolander beach pine						</td><td>	MAGR	</td><td><i>	Magnolia grandiflora				</i></td><td>	Southern magnolia		</td></tr>
+					<tr><td>	PITA	</td><td><i>	Pinus taeda								</i></td><td>	Loblolly pine							</td><td>	PICO5	</td><td><i>	Pinus contorta var. bolanderi		</i></td><td>	Bolander beach pine		</td></tr>
+					<tr><td>	PLOC	</td><td><i>	Platanus occidentalis					</i></td><td>	American sycamore						</td><td>	PINI	</td><td><i>	Pinus nigra							</i></td><td>	Austrian pine			</td></tr>
+					<tr><td>	PYCA	</td><td><i>	Pyrus calleryana						</i></td><td>	Callery pear							</td><td>	PIPO	</td><td><i>	Pinus ponderosa						</i></td><td>	Ponderosa pine			</td></tr>
+					<tr><td>	QULA2	</td><td><i>	Quercus laurifolia						</i></td><td>	Laurel oak								</td><td>	QUNI	</td><td><i>	Quercus nigra						</i></td><td>	Water oak				</td></tr>
+					<tr><td>	QUNI	</td><td><i>	Quercus nigra							</i></td><td>	Water oak								</td><td>	QUPA	</td><td><i>	Quercus palustris					</i></td><td>	Pin oak					</td></tr>
+					<tr><td>	QUPH	</td><td><i>	Quercus phellos							</i></td><td>	Willow oak								</td><td>	QURU	</td><td><i>	Quercus rubra						</i></td><td>	Northern red oak		</td></tr>
+					<tr><td>	QUVI	</td><td><i>	Quercus virginiana						</i></td><td>	Live oak								</td><td>	TIAM	</td><td><i>	Tilia americana						</i></td><td>	American basswood		</td></tr>
+					<tr><td>	SAPA	</td><td><i>	Sabal palmetto							</i></td><td>	Cabbage palmetto						</td><td>	TICO	</td><td><i>	Tilia cordata						</i></td><td>	Littleleaf linden		</td></tr>
+					<tr><td>			</td><td><i>											</i></td><td>											</td><td>	ULAM	</td><td><i>	Ulmus americana						</i></td><td>	American elm			</td></tr>
+					<tr><td>			</td><td><i>											</i></td><td>											</td><td>	ULPU	</td><td><i>	Ulmus pumila						</i></td><td>	Siberian elm			</td></tr>
+
+
+					<br>
+					<tr class="table-head">
+						<td colspan="3" align="center"><br><b>Climate Zone 13 - Lower Midwest</b></td><td colspan="3" align="center"><br><b>Climate Zone 14 - South</b></td>
+					</tr>
+					<tr>
+						<td><b>Sp Code</b></td><td><b>Botanic Name</b></td><td><b>Common Name</b></td> <td><b>Sp Code</b></td><td><b>Botanic Name</b></td><td><b>Common Name</b></td>
+					</tr>
+					<tr><td>	ACPL	</td><td><i>	Acer platanoides						</i></td><td>	Norway maple							</td><td>	ACRU	</td><td><i>	Acer rubrum							</i></td><td>	Red maple				</td></tr>
+					<tr><td>	ACRU	</td><td><i>	Acer rubrum								</i></td><td>	Red maple								</td><td>	ACSA1	</td><td><i>	Acer saccharinum					</i></td><td>	Silver maple			</td></tr>
+					<tr><td>	ACSA1	</td><td><i>	Acer saccharinum						</i></td><td>	Silver maple							</td><td>	ACSA2	</td><td><i>	Acer saccharum						</i></td><td>	Sugar maple				</td></tr>
+					<tr><td>	ACSA2	</td><td><i>	Acer saccharum							</i></td><td>	Sugar maple								</td><td>	BENI	</td><td><i>	Betula nigra						</i></td><td>	River birch				</td></tr>
+					<tr><td>	CASP	</td><td><i>	Catalpa speciosa						</i></td><td>	Northern catalpa						</td><td>	COFL	</td><td><i>	Cornus florida						</i></td><td>	Flowering dogwood		</td></tr>
+					<tr><td>	CECA	</td><td><i>	Cercis canadensis						</i></td><td>	Eastern redbud							</td><td>	ILOP	</td><td><i>	Ilex opaca							</i></td><td>	American holly			</td></tr>
+					<tr><td>	CEOC	</td><td><i>	Celtis occidentalis						</i></td><td>	Northern hackberry						</td><td>	JUVI	</td><td><i>	Juniperus virginiana				</i></td><td>	Eastern red cedar		</td></tr>
+					<tr><td>	FRAM	</td><td><i>	Fraxinus americana						</i></td><td>	White ash								</td><td>	LA6		</td><td><i>	Lagerstroemia sp.					</i></td><td>	Lagerstroemia			</td></tr>
+					<tr><td>	FRPE	</td><td><i>	Fraxinus pennsylvanica					</i></td><td>	Green ash								</td><td>	LIST	</td><td><i>	Liquidambar styraciflua				</i></td><td>	Sweetgum				</td></tr>
+					<tr><td>	GLTR	</td><td><i>	Gleditsia triacanthos					</i></td><td>	Honeylocust								</td><td>	MA2		</td><td><i>	Malus sp.							</i></td><td>	Apple					</td></tr>
+					<tr><td>	ILOP	</td><td><i>	Ilex opaca								</i></td><td>	American holly							</td><td>	MAGR	</td><td><i>	Magnolia grandiflora				</i></td><td>	Southern magnolia		</td></tr>
+					<tr><td>	JUNI	</td><td><i>	Juglans nigra							</i></td><td>	Black walnut							</td><td>	PHDA4	</td><td><i>	Phoenix dactylifera					</i></td><td>	Date palm				</td></tr>
+					<tr><td>	MA2		</td><td><i>	Malus sp.								</i></td><td>	Apple									</td><td>	PICO5	</td><td><i>	Pinus contorta var. bolanderi		</i></td><td>	Bolander beach pine		</td></tr>
+					<tr><td>	MAGR	</td><td><i>	Magnolia grandiflora					</i></td><td>	Southern magnolia						</td><td>	PIEC	</td><td><i>	Pinus echinata						</i></td><td>	Shortleaf pine			</td></tr>
+					<tr><td>	MO		</td><td><i>	Morus sp.								</i></td><td>	Mulberry								</td><td>	PITA	</td><td><i>	Pinus taeda							</i></td><td>	Loblolly pine			</td></tr>
+					<tr><td>	PHCA	</td><td><i>	Phoenix canariensis						</i></td><td>	Canary Island date palm					</td><td>	PR		</td><td><i>	Prunus sp.							</i></td><td>	Plum					</td></tr>
+					<tr><td>	PHDA4	</td><td><i>	Phoenix dactylifera						</i></td><td>	Date palm								</td><td>	PRYE	</td><td><i>	Prunus yedoensis					</i></td><td>	Yoshino flowering cherry</td></tr>
+					<tr><td>	PICO5	</td><td><i>	Pinus contorta var. bolanderi			</i></td><td>	Bolander beach pine						</td><td>	PYCA	</td><td><i>	Pyrus calleryana					</i></td><td>	Callery pear			</td></tr>
+					<tr><td>	PINI	</td><td><i>	Pinus nigra								</i></td><td>	Austrian pine							</td><td>	QUAL	</td><td><i>	Quercus alba						</i></td><td>	White oak				</td></tr>
+					<tr><td>	PIPU	</td><td><i>	Picea pungens							</i></td><td>	Blue spruce								</td><td>	QUNI	</td><td><i>	Quercus nigra						</i></td><td>	Water oak				</td></tr>
+					<tr><td>	PIST	</td><td><i>	Pinus strobus							</i></td><td>	Eastern white pine						</td><td>	QUPH	</td><td><i>	Quercus phellos						</i></td><td>	Willow oak				</td></tr>
+					<tr><td>	PODE	</td><td><i>	Populus deltoides						</i></td><td>	Eastern cottonwood						</td><td>	QURU	</td><td><i>	Quercus rubra						</i></td><td>	Northern red oak		</td></tr>
+					<tr><td>	PYCA_B	</td><td><i>	Pyrus calleryana 'Bradford'				</i></td><td>	Callery pear 'Bradford'					</td><td>	SAPA	</td><td><i>	Sabal palmetto						</i></td><td>	Cabbage palmetto		</td></tr>
+					<tr><td>	QUIL2	</td><td><i>	Quercus ilex							</i></td><td>	Roble negro								</td><td>	ULAL	</td><td><i>	Ulmus alata							</i></td><td>	Winged elm				</td></tr>
+					<tr><td>	QURU	</td><td><i>	Quercus rubra							</i></td><td>	Northern red oak						</td><td>	WAFI	</td><td><i>	Washingtonia filifera				</i></td><td>	California palm			</td></tr>
+					<tr><td>	TICO	</td><td><i>	Tilia cordata							</i></td><td>	Littleleaf linden						</td><td>			</td><td><i>										</i></td><td>							</td></tr>
+					<tr><td>	ULPU	</td><td><i>	Ulmus pumila							</i></td><td>	Siberian elm							</td><td>			</td><td><i>										</i></td><td>							</td></tr>
+					<tr><td>	WARO	</td><td><i>	Washingtonia robusta					</i></td><td>	Mexican fan palm						</td><td>			</td><td><i>										</i></td><td>							</td></tr>
+
+					<br>
+					<tr class="table-head">
+						<td colspan="3" align="center"><br><b>Climate Zone 15 - Tropical</b></td><td colspan="3" align="center"><br><b>Climate Zone 16 - Central Florida</b></td>
+					</tr>
+					<tr>
+						<td><b>Sp Code</b></td><td><b>Botanic Name</b></td><td><b>Common Name</b></td> <td><b>Sp Code</b></td><td><b>Botanic Name</b></td><td><b>Common Name</b></td>
+					</tr>
+					<tr><td>	BABL	</td><td><i>	Bauhinia x blakeana						</i></td><td>	Hong Kong orchid tree					</td><td>	ACRU	</td><td><i>	Acer rubrum							</i></td><td>	Red maple				</td></tr>
+					<tr><td>	CAEQ	</td><td><i>	Casuarina equisetifolia					</i></td><td>	Ironwood								</td><td>	CICA	</td><td><i>	Cinnamomum camphora					</i></td><td>	Camphor tree			</td></tr>
+					<tr><td>	CAIN4	</td><td><i>	Calophyllum inophyllum					</i></td><td>	Kamani									</td><td>	ERJA	</td><td><i>	Eriobotrya japonica					</i></td><td>	Loquat tree				</td></tr>
+					<tr><td>	CANE33	</td><td><i>	Cassia x nealiae						</i></td><td>	Rainbow shower tree						</td><td>	JUSI	</td><td><i>	Juniperus virginiana var. silicicola</i></td><td>	Southern redcedar		</td></tr>
+					<tr><td>	CISP2	</td><td><i>	Citharexylum spinosum					</i></td><td>	Fiddlewood								</td><td>	KOEL	</td><td><i>	Koelreuteria elegans				</i></td><td>	Chinese raintree		</td></tr>
+					<tr><td>	COERA2	</td><td><i>	Conocarpus erectus var. argenteus		</i></td><td>	Silver buttonwood						</td><td>	LAIN	</td><td><i>	Lagerstroemia indica				</i></td><td>	Common crapemyrtle		</td></tr>
+					<tr><td>	CONU	</td><td><i>	Cocos nucifera							</i></td><td>	Coconut palm							</td><td>	LIST	</td><td><i>	Liquidambar styraciflua				</i></td><td>	Sweetgum				</td></tr>
+					<tr><td>	COSU2	</td><td><i>	Cordia subcordata						</i></td><td>	Kou										</td><td>	MAGR	</td><td><i>	Magnolia grandiflora				</i></td><td>	Southern magnolia		</td></tr>
+					<tr><td>	DERE	</td><td><i>	Delonix regia							</i></td><td>	Royal poinciana							</td><td>	PIEL	</td><td><i>	Pinus elliottii						</i></td><td>	Slash pine				</td></tr>
+					<tr><td>	ELOR2	</td><td><i>	Elaeodendron orientale					</i></td><td>	False olive								</td><td>	PLOC	</td><td><i>	Platanus occidentalis				</i></td><td>	American sycamore		</td></tr>
+					<tr><td>	FIBE	</td><td><i>	Ficus benjamina							</i></td><td>	Benjamin fig							</td><td>	PRCA	</td><td><i>	Prunus caroliniana					</i></td><td>	Carolina laurelcherry	</td></tr>
+					<tr><td>	FIDE6	</td><td><i>	Filicium decipiens						</i></td><td>	Fern tree								</td><td>	QULA2	</td><td><i>	Quercus laurifolia					</i></td><td>	Laurel oak				</td></tr>
+					<tr><td>	ILPA2	</td><td><i>	Ilex paraguariensis						</i></td><td>	Paraguay-tea							</td><td>	QUSH	</td><td><i>	Quercus shumardii					</i></td><td>	Shumard oak				</td></tr>
+					<tr><td>	LASP	</td><td><i>	Lagerstroemia speciosa					</i></td><td>	Giant crapemyrtle						</td><td>	QUVI	</td><td><i>	Quercus virginiana					</i></td><td>	Live oak				</td></tr>
+					<tr><td>	MEQU	</td><td><i>	Melaleuca quinquenervia					</i></td><td>	Paperbark								</td><td>	SAPA	</td><td><i>	Sabal palmetto						</i></td><td>	Cabbage palmetto		</td></tr>
+					<tr><td>	PHDA4	</td><td><i>	Phoenix dactylifera						</i></td><td>	Date palm								</td><td>	SYRO	</td><td><i>	Syagrus romanzoffiana				</i></td><td>	Queen palm				</td></tr>
+					<tr><td>	PIBR2	</td><td><i>	Pinus brutia							</i></td><td>	Turkish pine; East Mediterranean pine	</td><td>	THOR	</td><td><i>	Platycladus orientalis				</i></td><td>	Oriental arborvitae		</td></tr>
+					<tr><td>	PICO5	</td><td><i>	Pinus contorta var. bolanderi			</i></td><td>	Bolander beach pine						</td><td>	TRSE6	</td><td><i>	Triadica sebifera					</i></td><td>	Tallowtree				</td></tr>
+					<tr><td>	PIRA	</td><td><i>	Pinus radiata							</i></td><td>	Monterey pine							</td><td>	ULPA	</td><td><i>	Ulmus parvifolia					</i></td><td>	Chinese elm				</td></tr>
+					<tr><td>	PISA2	</td><td><i>	Samanea saman							</i></td><td>	Monkeypod								</td><td>	WARO	</td><td><i>	Washingtonia robusta				</i></td><td>	Mexican fan palm		</td></tr>
+					<tr><td>	SWMA	</td><td><i>	Swietenia mahogani						</i></td><td>	West Indian mahogany					</td><td>			</td><td><i>										</i></td><td>							</td></tr>
+					<tr><td>	TAAR	</td><td><i>	Tabebuia aurea							</i></td><td>	Silver trumpet tree						</td><td>			</td><td><i>										</i></td><td>							</td></tr>
+					<tr><td>	TACH	</td><td><i>	Tabebuia ochracea subsp. Neochrysantha	</i></td><td>	Golden trumpet tree						</td><td>			</td><td><i>										</i></td><td>							</td></tr>
+					<tr><td>	TAPA	</td><td><i>	Tabebuia heterophylla					</i></td><td>	Pink tecoma								</td><td>			</td><td><i>										</i></td><td>							</td></tr>
+					<tr><td>	VEME	</td><td><i>	Veitchia merrillii						</i></td><td>	Manila palm								</td><td>			</td><td><i>										</i></td><td>							</td></tr>
+				</table>
+			</p>
+			<p>
+				<br>
+				<br>
+				<b><a name="AgeDBH">Age or DBH:</a></b> For projects that are extrapolating GHG benefits into the future, age data should be used. For projects where trees have been measured, d.b.h. data should be used. d.b.h. is the diameter-at-breast height of the trunk of the tree measured 4.5 ft (1.4m) above the ground. For palm species, height should be used instead of d.b.h. Consult Appendix B of the Urban Forest Project Reporting Protocol if trees are multiple-stemmed or on a slope for detailed instructions of proper measurement techniques.
+				<br>
+				<br>
+				<b>Condition:</b> Record whether tree is dead or alive. The carbon stored in dead trees is eligible to be reported or to be used for wood products or bioenergy projects. Only live trees, however, are eligible for energy conservation projects.
+				<br>
+				<br>
+				<b><a name="Azimuth">Azimuth:</a></b> For energy conservation projects, record the compass bearing or azimuth of the tree from the nearest building. Azimuth is taken with a compass, as in <b>Figure 4</b>, the coordinate of tree taken from imaginary lines extending from walls of the nearest conditioned space (heated or air-conditioned space—may not be same address as tree location):
+			</p>
+			<p align="center">
+				<table>
+					<tr><td>
+						1: N = North (337.5-22.5°)
+						<br>2: NE = Northeast (22.5-67.5°)
+						<br>3: E = East (67.5-112.5°)
+						<br>4: SE = Southeast (112.5-157.5°)
+						<br>5: S = South (157.5-202.5°)
+						<br>6: SW = Southwest (202.5-247.5°)
+						<br>7: W = West (247.5-292.5°)
+						<br>8: NW = Northwest (292.5-337.5°)
+						<br>9: NA = No building for reference (>18 m setback)
+					</td></tr>
+				</table>
+			</p>
+			<p align="center">
+				<br>
+				<br>
+				<br>
+				<img src="CCTC_Help_Files/image010.gif" />
+				<br>
+				<strong>Figure 4.</strong> How orientation from tree to building should be measured. Shows imaginary lines extending from walls and associated tree orientation.
+			</p>
+			<p>
+				<br>
+				<strong><a name="Distance">Distance:</a></strong> For energy conservation projects, record distance from tree to nearest air-conditioned/heated space. Evaluate as:
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1: 0-8 m (0-25 ft, or ‘adjacent’)
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2: 8.1-12 m (25.1-40 ft, or ‘near’)
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3: 12.1-18 m (40.1-60 ft, or ‘far’)
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4: >18 m (>60 ft)
+			</p>
+			<p>
+				<br>
+				<strong>Trees/building:</strong> : For energy conservation projects, record the presence of existing trees within 18 m (60 ft) of the building. Count only trees greater than 12 m (40 ft) tall, or capable of growing to this size, located within 18 m (60 ft) of the east-, south-, or west-facing walls. Existing trees includes project trees that have already been added to the data base. If such a tree already exists around a property, the building is considered “shaded” and additional project trees will not be considered to have an energy benefit. Only their carbon storage benefit can be considered.
+			</p>
+			<p>
+				<br>
+				<strong><a name="Vintage">Vintage:</a></strong> For energy conservation projects, assign the correct vintage to each eligible residential building. A vintage consists of buildings of similar age, construction type, floor area, and energy efficiency characteristics. Detailed information on each vintage is listed in below in <b>Section 4</b>. Although the exact characteristics of each vintage change regionally, the names remain constant and general distinguishing features are:
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1: Pre-1950 vintage - low insulation levels, small conditioned floor area (CFA), large window area:CFA ratios,
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2: 1950-1980 vintage - more ceiling insulation, lower window area:CFA ratios
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3: Post-1980 vintage -  more wall insulation, more CFA, lower window area:CFA ratios
+			</p>
+			<p>
+				<br>
+				<strong><a name="ACEquipment">AC Equipment:</a></strong> For energy conservation projects, identify the type of air conditioning equipment in the building nearest to the tree. Choices for air conditioning equipment are
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0: None
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1: Central air/heat pump
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2: Evaporative cooler
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3: Wall/window unit
+			</p>
+			<p>
+				<br>
+				<strong><a name="HeatingEquipment">Heating Equipment:</a></strong> For energy conservation projects, identify the type of heating equipment in the building nearest to the tree. Choices for heating equipment are:
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0: None
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1: Natural gas
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2: Oil/other fossil
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3: Electric resistance (not currently implemented)
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4: Heat pump
+			</p>
+			<p>
+				<br>
+				<strong>Energy:</strong> Based on the condition of the tree and the presence of additional existing trees, determine whether the tree qualifies as eligible for an energy conservation project.
+			</p>
+			<p>
+				<br>
+				<strong><a name="HeatingEmissions">Heating Emission Factors:</a></strong> In contrast to electricity emission factors, which should be constant across a project, emission factors for space heating will differ depending on heating fuel type used in each building. See <b>Table 2</b> for the most common heat sources.
+				<br>
+				<br>
+				Once tree data have been collected, each tree can be entered individually into the CTCC.
+			</p>
+		</td></tr>
+		<tr><td class="body">
+			<br>
+			<h3><a name="D3.3">3.3. Determining Tree Biomass and Carbon Storage</a></h3>
+			<p>
+				<a name="BiomassCarbon"></a>
+				Instructions for using the CTCC to measure carbon storage by project trees are given below. For instructions on using the CTCC to estimate energy conservation benefits at the same time, see <b>3.4</b> below.
+				<br>
+				<ol>
+					<li>Enter species and d.b.h. or age data (e.g. as recorded in <b>Fig. 3</b>) for one tree into the CTCC Tree and Building data entry section (<b>Fig. 5</b>). Entries related to energy conservation are blank. <b>Fig. 6</b> shows the CTCC output for carbon storage.</li>
+					<li>Record CO<sub>2</sub> sequestration (lb/tree/year), total CO<sub>2</sub> stored (lb/tree), and above ground biomass (dry weight, lb/tree) from <b>Fig. 6</b> in a separate location. For example, <b>Fig. 7</b> is included as an optional form in worksheet [CarbonCalculatorNN]Output Template.</li>
+					<li>Calculate emission reductions for all project trees by repeating steps 1 through 3 above for each tree, recording the results as illustrated in <b>Fig. 7</b>, which facilitates totaling the results over all trees for the project.</li>
+				</ol>
+			</p>
+			<p align="center">
+				<br>
+				<img src="CCTC_Help_Files/image011.jpg"/>
+				<br>
+				<strong>Figure 5.</strong> Tree-related data entry section for carbon storage project only (shaded area of [CarbonCalculatorNN.xls]CTCC).
+			</p>
+			<p align="center">
+				<br>
+				<img src="CCTC_Help_Files/image013.jpg"/>
+				<br>
+				<strong>Figure 6.</strong> Output section of CTCC: carbon storage project only, CICA (camphor tree), year 40 ([CarbonCalculatorNN.xls]CTCC)
+			</p>
+			<p align="center">
+				<br>
+				<img src="CCTC_Help_Files/image015.jpg"/>
+				<br>
+				<strong>Figure 7.</strong> Example output summary table for results from CTCC for carbon storage project only.
+			</p>
+		</td></tr>
+		<tr><td class="body">
+			<br>
+			<br>
+			<h3><a name="D3.4">3.4. Determining Reduction in GHG Emissions from Tree Shade and Carbon Storage</a></h3>
+			<p>
+				<a name="GHGCarbon"></a>
+					If carbon storage benefits AND energy conservation benefits are calculated, data are entered in the CTCC as indicated below.
+					<ol>
+						<li>Enter tree and building data for one tree into the Carbon Calculator (<b>Fig. 8</b>).</li>
+						<li>Record tree shade effects on building heating (kBtu/tree/year) and cooling (kWh/tree/year) from <b>Fig. 9</b> in another location. For example, as in <b>Fig. 10</b>. Tree shade effects on energy are converted to mass of CO<sub>2</sub> by multiplying energy units (kWh and KBtu) by utility-specific emission factors in the CTCC.</li>
+						<li>Calculate emission reductions for all project trees by repeating steps 1 to 2 described above for each time interval, then recording the results into a summary table like that illustrated in <b>Fig. 10</b>, which facilitates totaling the results over all trees for the project.</li>
+					</ol>
+			</p>
+			<p align="center">
+				<br>
+				<img src="CCTC_Help_Files/image017.jpg"/>
+				<br>
+				<strong>Figure 8.</strong> Tree- and building-related data entry section for energy conservation project (shaded areas of [CarbonCalculatorNN.xls] CTCC. Data for carbon storage project are included as a subset.
+			</p>
+			<p  align="center">
+				<br>
+				<img src="CCTC_Help_Files/image019.jpg"/>
+				<br>
+				<strong>Figure 9.</strong> Output section of CTCC: energy conservation and carbon storage project [CarbonCalculatorNN.xls]CTCC) for tree in <b>Table 9</b>.
+			</p>
+			<p align="center">
+				<br>
+				<img src="CCTC_Help_Files/image021.jpg"/>
+				<br>
+				<strong>Figure 10.</strong> Example output summary table for results from CTCC for combined carbon storage/energy conservation project.
+			</p>
+		</td></tr>
+		<tr><td class="body">
+			<br>
+			<br>
+			<h3><a name="D3.5">3.5. Description of CTCC Outputs</a></h3>
+			<p>
+				Carbon Calculator results are presented for five variables in English and SI units:
+			</p>
+			<p>
+				<ul>
+					<li>
+						Energy reductions - effect of the tree on annual energy consumption for air conditioning (kWh/tree) and heating (MBtu or GJ/tree)
+					</li>
+					<br>
+					<li>
+						Emissions reductions - effect of the tree on GHG emissions associated with generation of electricity and combustion of heating fuels. These values are calculated using specified emission factors for each GHG and presented as annual kg and lb/tree in CO<sub>2</sub> equivalents. A negative value indicates increased emissions associated with tree shade obstructing winter solar heat gain.
+					</li>
+					<br>
+					<li>
+						CO<sub>2</sub> sequestration - annual amount of CO<sub>2</sub> sequestered as biomass in kg and lb per tree. This is calculated as the difference between the total amount of CO<sub>2</sub> stored in the tree in year x minus the amount stored in year x-1.
+					</li>
+					<br>
+					<li>
+						Total CO<sub>2</sub> stored - total amount of CO<sub>2</sub> stored in the tree due to its growth over many years.
+					</li>
+					<br>
+					<li>
+						Aboveground biomass - total amount of biomass stored aboveground in dry weight. This amount excludes foliar and root biomass.
+					</li>
+				</ul>
+			</p>
+		</td></tr>
+		<tr><td class="body">
+			<br>
+			<br>
+			<h3><a name="D3.6">3.6. Copying CTCC Outputs to a Summary Table</a></h3>
+			<p>
+				To create a summary table similar to <b>Fig. 10</b> with CTCC outputs for individual trees, special steps are required. All cells on the ‘CTTC’ page of the workbook except the gray input section have been locked (using the Excel ‘protect’ feature) to prevent inadvertent user modification. To copy values from the Results section, this lock can be overridden by going to "Tools" in the main menu, clicking on "Protection", and then selecting "Unprotect Sheet". This allows output cells to be selected and data to be copied. If data are to be pasted into another excel workbook, then the user should select “Edit” from the main menu, click on “Paste Special”, then select “Values” in the dialog box (necessary since formulas actually populate these cells), and finally click on “OK”. For example, cells C35:J35 can be copied from the ‘CTCC’ page and then pasted as values into successive rows in columns C:J of the ‘Output Template’ page to create a table of results.
+			</p>
+			<br>
+		</td></tr>
+		<tr><td class="body">
+			<br>
+			<br>
+			<h3><a name="D4">4. Methods</a></h3>
+			<h3><a name="D4.1">4.1. Tree Biomass and Carbon Storage</a></h3>
+
+			<p>
+				<b>Sampling and curve-fitting</b>
+				<br>
+				To obtain the primary data—d.b.h., tree height, and number of years after planting—required to predict carbon storage and sequestration, growth equations predicting age, d.b.h., and tree height were derived from data collected in six reference cities (see Appendix B of the Urban Forest Project Reporting Protocol).
+			</p>
+			<p>
+				A stratified random sample of 650-1000 street trees per city, drawn from each city’s municipal tree database, was inventoried to establish relations between tree age, size, leaf area and biomass. Samples were composed of the 20-22 most abundant species in each city; from these data, growth of all trees is inferred based on taxonomic relationships. For those species that cannot be matched taxonomically, growth equations were assigned based on similar tree structure (stem, branch, leaf).
+			</p>
+			<p>
+				To obtain information spanning the life cycle of predominant tree species, the inventory was stratified into nine d.b.h. classes:
+				<ul>
+					<li>0–3 in (0–7.6 cm)</li>
+					<li>3–6 in (7.6–15.2 cm)</li>
+					<li>6–12 in (15.2–30.5 cm</li>
+					<li>12–18 in (30.5–45.7 cm)</li>
+					<li>18–24 in (45.7–61.0 cm)</li>
+					<li>24–30 in (61.0–76.2 cm)</li>
+					<li>30–36 in (76.2–91.4 cm)</li>
+					<li>36–42 in (91.4–106.7 cm)</li>
+					<li>>42 in (>106.7 cm)</li>
+				</ul>
+			</p>
+			<p>
+				Thirty to sixty randomly selected trees of each species were selected to survey, along with an equal number of alternative trees. Tree measurements included d.b.h. (to nearest 0.1 cm by sonar measuring device), tree crown and crown base (to nearest 0.5 m by altimeter), crown diameter in two directions (parallel and perpendicular to nearest street to nearest 0.5 m by sonar measuring device), tree condition and location. Replacement trees were sampled when trees from the original sample population could not be located. Tree age (number of years after planting) was determined by municipal tree managers. Fieldwork was conducted during summer months, June-August, from 1998 through 2003.
+			</p>
+			<p>
+				Linear and non-linear regression was used to fit predictive models—with d.b.h. as a function of age—for each of the 20-22 sampled species. Predictions of leaf surface area (LSA), crown diameter, and height metrics were modeled as a function of d.b.h. using best-fit models (Peper et al. 2003).
+			</p>
+			<p>
+				<br>
+				<b>Tree-size modeling: extrapolation and capping</b>
+				<br>
+				All species in the CTCC were grown to a minimum of 100 years after initial planting date. For shorter-lived species (e.g. <i>Prunus</i> sp., <i>Pyrus</i> sp.), growth is capped at the maximum d.b.h. and height values for that region. For example, in Berkeley, California, the largest <i>Pyrus calleryana</i> present in the city database was 21in d.b.h. and 40-ft tall at 52 years, its maximum size. Therefore, tree size is capped at those dimensions in the CTCC so that the same d.b.h., height, and carbon storage values are reported for all years from 52 through 100. Since tree sizes are capped, no annual sequestration is currently reported after the capping point.
+			</p>
+			<p>
+				There were also species measured that had not yet reached mature sizes within the respective cities. Where local data were available on mature size for that region, we used the equations to grow the trees to that maximum size, extrapolating beyond the measured data. For example, the largest <i>Liquidambar styraciflua</i> sampled in Berkeley measured 28 in d.b.h. and 64-ft tall at 58 years. However, in the Oakland Hills adjacent to Berkeley stand several <i>Liquidambar</i> trees planted 100 years ago, the largest measuring 37 in d.b.h. and 72-ft tall. We used our equations to extrapolate from the dimensions of the 58-yr old tree to those of the 100-yr old tree. If no regional information was available on maximum tree size for a species, growth was capped at the less than mature size value. Therefore, if information had not been available on the larger <i>Liquidambar</i> described above, tree size, carbon storage and annual sequestration would have been capped at the lower values, using the same method as described for the <i>Pyrus calleryana</i> example above.
+			</p>
+			<p>
+				<br>
+				<b>Calculating and Predicting Biomass and Carbon</b>
+				<br>
+				The following sections describe how measured tree size data are used with biomass equations to calculate tree volume and stored carbon. Equations are presented for 26 open-grown urban tree species. To be consistent with biomass equations used in the Forest Protocol, foliar biomass is not included in the formulations. Additional biomass equations have been adapted from the literature on natural and native forest biomass for use in urban settings. We have also used the urban species equations to develop two general equations for broadleaf trees and conifers. These equations are used in the CTCC. Complete listings of equations are available in <b>Tables 4</b> and <b>5</b>. <b>Table 4</b> lists equations based on measurements of d.b.h. and height or d.b.h. only, derived from data collected on open-grown trees.
+			</p>
+			<p>
+				<br>
+				<b>Estimating Biomass and Carbon using Volumetric Equations</b>
+				<br>
+				Estimating biomass and carbon using volumetric equations is a two-step process that entails 1) calculating green volume and 2) converting green volume to dryweight biomass and then carbon (C) and stored carbon dioxide equivalents (CO<sub>2</sub>). <b>Tables 4</b> and <b>5</b> provide examples of volumetric equations and biomass density factors for common urban species (Pillsbury et al. 1998; McHale 2009). <b>Table 4</b> equations estimate volume (m<sup>3</sup>/tree) from diameter at breast height (d.b.h. in centimeters) and height (ht in meters) measurements. Dryweight density factors were obtained by multiplying Markwardt and Wilson’s (1935) values for specific gravity based on volume when green by 1,000 kg/m<sup>3</sup>.
+				<br>
+				<br>
+				1. Use equations for dbh and height (or equations for dbh only if necessary) to calculate volume.
+				<br>
+				<br>
+				Example:
+				<br>
+				<br>
+				Volume in cubic meters (V) for a 15.6-m tall hackberry (<i>Celtis occidentalis</i>) with a 40.4-cm dbh is calculated as:
+				<br>
+				<br>
+				V = 0.002245 × (40.4)<sup>2.118</sup> × (15.6)<sup>-0447</sup> = 1.66 m<sup>3</sup>			<b>[Eq. 1]</b>
+				<br>
+				<br>
+				<b>Dryweight Biomass Calculation</b>
+				<br>
+				2. Determine dryweight (DW) biomass and carbon stored by applying DW biomass density factors in <b>Table 4</b>, incorporating belowground biomass, and calculating carbon.
+				<br>
+				<br>
+				a.	Convert from volume to DW biomass by multiplying V by the species-specific DW density factor for <i>Celtis occidentalis</i> (490 kg/ m<sup>3</sup>).
+				<br>
+				<br>
+				For hackberry, DW would be calculated as:
+				<br>
+				<br>
+				DW = 1.66 m<sup>3</sup> × 490 kg/ m<sup>3</sup> = 813.40 kg	<b>[Eq. 2]</b>
+				<br>
+				<br>
+				b.	The equations given here only calculate volume (and hence biomass) for the aboveground portion of the tree. Add the biomass stored belowground by multiplying the DW biomass by 1.28 (Husch et al. 1982; Tritton and Hornbeck 1982; Wenger 1984).
+				<br>
+				<br>
+				c.	For total DW biomass, including belowground roots calculate:
+				<br>
+				<br>
+				Total DW = 813.40 kg × 1.28 = 1041.15 kg		<b>[Eq. 3]</b>
+				<br>
+				<br>
+				d.	Convert DW biomass into kilograms of carbon (C) by multiplying by the constant 0.50 (Lieth 1963; Whittaker and Likens 1973):
+				<br>
+				<br>
+				C = 1041.15 kg × 0.5 = 520.58 kg			<b>[Eq. 4]</b>
+				<br>
+				<br>
+				e.	Convert stored carbon into stored carbon dioxide (CO<sub>2</sub>) by multiplying by the constant 3.67 (molecular weight of carbon dioxide) as follows:
+				<br>
+				<br>
+				CO<sub>2</sub> = 520.588 kg × 3.67 = 1910.53 kg			<b>[Eq. 5]</b>
+				<br>
+				<br>
+				f.	Stored carbon dioxide is to be reported in metric tons. Therefore, results calculated in kilograms must be multiplied by 0.001 to convert to metric tons.
+			</p>
+			<p>
+				<br>
+				<b>Freshweight biomass calculation</b>
+				<br>
+				For applications where estimates of FW biomass are required FW density factors are also included in <b>Table 4</b>. To calculate FW biomass:
+				<br>
+				<br>
+				a.	Convert from volume to FW biomass by multiplying V by the species-specific FW density factor for <i>Celtis occidentalis</i> (801 kg/ m<sup>3</sup>).
+				<br>
+				<br>
+				For hackberry, FW would be calculated as:
+				<br>
+				<br>
+				FW = 1.66 m<sup>3</sup> × 801 kg/ m<sup>3</sup> = 1329.66 kg
+				<br>
+				<br>
+				b.	To add the FW biomass stored belowground by multiplying the FW biomass by 1.28. For total FW biomass, including belowground roots calculate:
+				<br>
+				<br>
+				Total FW = 1329.66 kg x 1.28 = 1701.96 kg
+				<br>
+				<br>
+				c.	Note that the two general equations in <b>Table 4</b> produce FW biomass. To convert to DW biomass, multiply the broadleaf FW by 0.56 and the conifer FW by 0.48 (Stanek and State 1978; Phillips 1981 ; Husch et al. 1982; Nowak 1994). Then follow steps c and d above to obtain carbon (C) and carbon dioxide (CO<sub>2</sub>) .
+			</p>
+			<p>
+				<b>Estimating biomass and carbon using forest-derived equations</b>
+				<br>
+				Biomass calculated using equations derived from native or natural forest trees (listed in <b>Table 4</b>) must be adjusted by a factor of 0.80 when applied to open-grown, urban trees because of differences in biomass allocation between the tree populations (Nowak 1994).
+				<br>
+				<br>
+				Unlike the equations used above, the forest equations listed produce DW biomass in kilograms rather than FW biomass. Therefore the step involving the species-specific DW density factor (step 2a above) does not need to be incorporated. The calculation for CO<sub>2</sub>  stored is:
+			 	<br>
+			 	<br>
+				CO<sub>2</sub>  = DW × 1.28 × 0.5 × 3.67			<b>[Eq. 6]</b>
+			</p>
+			<p>
+				<br>
+				<b>Error in predicting future growth, carbon and biomass</b>
+				<br>
+				The volume equations were developed from trees that may differ in size from the trees in your sample or inventory. The d.b.h. ranges for trees sampled to develop the volume and biomass equations are listed where known at the end of the annex (<b>Tables 4</b> and <b>5</b>). Applying the equations to trees with d.b.h. outside of this range may increase the error in your predictions.
+				<br>
+				<br>
+				Your tree growth may differ significantly from tree growth models used by the CTCC. Therefore, it is important to attempt to quantify differences at the beginning of the project and through subsequent monitoring, to assess differences. It is also better to err on the side of underestimating carbon stocks rather than overestimating.
+				<br>
+				<br>
+				Initial suggestions for evaluating growth include contacting local arborists and other tree experts (e.g., local university extension offices, city tree managers) to evaluate the growth presented here. Obtaining information on “typical” annual growth is important – whether a species normally grows 1 cm per year or 3 cm per year is helpful. Asking arborists for average annual d.b.h. growth when trees are young, adolescent, middle-aged and senescent can allow for further comparison with data produced by the CTCC.
+			</p>
+			<p align="center">
+				<br>
+				<br>
+				<table class="caption" width="700px">
+				<tr><td class="body">
+					<b>Table 4.</b> Volume equations for 26 urban tree species requiring d.b.h. (cm) only or d.b.h. (cm) and height (m) measurements to calculate volume (McHale 2009, Pillsbury et al 1998). Density factors are listed for converting volume to freshweight (FW) and dryweight (DW), and two FW general biomass equations derived from these species are also listed.
+				</td></tr>
+				</table>
+				<br>
+				<table width="700px">
+					<tr class="table-head"><td width="15px">		</td><td>	<b>Species	</b>	</td><td>	<b>DBH Range (cm)</b>	</td><td>	<b>Volume (m<sup>3</sup>)</b>	</td><td width="50px">	  <b>FW Density for Vol to FW Conversion kg/m<sup>3</sup></b>	</td><td width="50px">	 <b>DW Density for Vol to DW Conversion kg/m<sup>3</sup></b>	</td></tr>
+					<tr><td>		</td><td>	Acacia longifolia			</td><td>	15.0 - 57.2		</td><td>	 =0.0283168466 (0.048490 * (dbh/2.54)<sup>2.347250</sup>)					</td><td>	953	</td><td>	630	</td></tr>
+					<tr><td>		</td><td>	Acer platanoides 			</td><td>	9.7 - 102.1		</td><td>	 =0.0019421 * dbh<sup>1.785	</sup>										</td><td>	772	</td><td>	480	</td></tr>
+					<tr><td>		</td><td>	Acer saccharinum 			</td><td>	13.2 - 134.9	</td><td>	 =0.000363 * dbh<sup>2.292	</sup>										</td><td>	721	</td><td>	440	</td></tr>
+					<tr><td>		</td><td>	Celtis occidentalis 		</td><td>	10.9 - 119.4	</td><td>	 =0.0014159 * dbh<sup>1.928	</sup>										</td><td>	801	</td><td>	490	</td></tr>
+					<tr><td>		</td><td>	Ceratonia siliqua			</td><td>	15.5 - 71.4		</td><td>	 =0.0283168466(0.066256 * (dbh/2.54)<sup>2.128861</sup>)					</td><td>	953	</td><td>	630	</td></tr>
+					<tr><td><b>D</b></td><td>	Cinnamomum camphora			</td><td>	12.7 - 68.8		</td><td>	 =0.0283168466(0.031449 * (dbh/2.54)<sup>2.534660</sup>)					</td><td>	849	</td><td>	520	</td></tr>
+					<tr><td><b>B</b></td><td>	Cupressus macrocarpa		</td><td>	15.7 - 146.6	</td><td>	 =0.0283168466(0.035598 * (dbh/2.54)<sup>2.495263</sup>)					</td><td>	352	</td><td>	460	</td></tr>
+					<tr><td><b>H</b></td><td>	Eucalyptus globulus			</td><td>	15.5 - 130.0	</td><td>	 =0.0283168466(0.055113 * (dbh/2.54)<sup>2.436970</sup>)					</td><td>	1121	</td><td>	620	</td></tr>
+					<tr><td>		</td><td>	Fraxinus pennsylvani	ca 	</td><td>	14.7 - 122.7	</td><td>	 =0.0005885 * dbh<sup>2.206	</sup>										</td><td>	785	</td><td>	530	</td></tr>
+					<tr><td><b>O</b></td><td>	Fraxinus velutina 'Modesto'	</td><td>	14.5 - 84.8		</td><td>	 =0.0283168466(0.022227 * (dbh/2.54)<sup>2.633462</sup>)					</td><td>	732	</td><td>	517	</td></tr>
+					<tr><td><b>N</b></td><td>	Gleditsia triancanthos 		</td><td>	9.1 - 98.3		</td><td>	 =0.0005055 * dbh<sup>2.220	</sup>										</td><td>	977	</td><td>	600	</td></tr>
+					<tr><td><b>L</b></td><td>	Gymnocladus dioicus 		</td><td>	10.2 - 36.8		</td><td>	 =0.0004159 * dbh<sup>2.059</sup>											</td><td>	769	</td><td>	550	</td></tr>
+					<tr><td><b>Y</b></td><td>	Jacaranda mimosifolia		</td><td>	17.3 - 59.7		</td><td>	 =0.0283168466(0.036147 * (dbh/2.54)<sup>2.486248</sup>)					</td><td>	657	</td><td>	380	</td></tr>
+					<tr><td>		</td><td>	Liquidambar styraciflua		</td><td>	14.0 - 54.4		</td><td>	 =0.0283168466(0.030684 * (dbh/2.54)<sup>2.560469</sup>)					</td><td>	801	</td><td>	440	</td></tr>
+					<tr><td>		</td><td>	Magnolia grandiflora		</td><td>	14.5 - 74.2		</td><td>	 =0.0283168466(0.022744 * (dbh/2.54)<sup>2.622015</sup>)					</td><td>	945	</td><td>	460	</td></tr>
+					<tr><td>		</td><td>	Pinus radiata				</td><td>	16.8 - 105.4	</td><td>	 =0.0283168466(0.019874 * (dbh/2.54)<sup>2.666079</sup>)					</td><td>	401	</td><td>	440	</td></tr>
+					<tr><td>		</td><td>	Pistacia chinensis			</td><td>	12.7 - 51.3		</td><td>	 =0.0283168466(0.019003 * (dbh/2.54)<sup>2.808625</sup>)					</td><td>	833	</td><td>	435	</td></tr>
+					<tr><td>		</td><td>	Platanus acerifolia			</td><td>	15.5 - 73.9		</td><td>	 =0.0283168466(0.025170 * (dbh/2.54)<sup>2.673578</sup>)					</td><td>	833	</td><td>	460	</td></tr>
+					<tr><td>		</td><td>	Populus sargentii 			</td><td>	6.4 - 136.7		</td><td>	 =0.0020891 * dbh<sup>1.873											</td><td>	785	</td><td>	370	</td></tr>
+					<tr><td>		</td><td>	Quercus ilex				</td><td>	12.7 - 52.1		</td><td>	 =0.0283168466(0.025169 * (dbh/2.54)<sup>2.607285</sup>)					</td><td>	1177	</td><td>	755	</td></tr>
+					<tr><td>		</td><td>	Quercus macrocarpa 			</td><td>	10.9 - 100.1	</td><td>	 =0.0002431 * dbh<sup>2.415</sup>											</td><td>	993	</td><td>	580	</td></tr>
+					<tr><td>		</td><td>	Tilia cordata 				</td><td>	11.2 - 64.5		</td><td>	 =0.0009359 * dbh<sup>2.042</sup>											</td><td>	673	</td><td>	320	</td></tr>
+					<tr><td>		</td><td>	Ulmus americana 			</td><td>	17.5 - 114.3	</td><td>	 =0.0018 * dbh<sup>1.869</sup>												</td><td>	865	</td><td>	460	</td></tr>
+					<tr><td>		</td><td>	Ulmus parvifolia chinensis	</td><td>	17.3 - 55.9		</td><td>	 =0.0283168466(0.028530 * (dbh/2.54)<sup>2.639347</sup>)					</td><td>	903	</td><td>	540	</td></tr>
+					<tr><td>		</td><td>	Ulmus pumila				</td><td>	15.5 - 131.6	</td><td>	 =0.0048879 * dbh<sup>1.613	</sup>										</td><td>	903	</td><td>	540	</td></tr>
+					<tr><td>		</td><td>	Zelkova serrata				</td><td>	14.5 - 86.4		</td><td>	 =0.0283168466(0.021472 * (dbh/2.54)<sup>2.674757</sup>)					</td><td>	903	</td><td>	540	</td></tr>
+					<tr><td>		</td><td>	General Broadleaf 			</td><td>	6.4 - 136.7		</td><td>	 =0.280285*(dbhcm)<sup>2.310647	</sup>									</td><td>	Eqtn produces FW	</td><td>	Multiply FW by 0.56	</td></tr>
+					<tr><td>		</td><td>	General Conifer				</td><td>	6.4 - 136.7		</td><td>	 =0.05654*(dbhcm)<sup>2.580671</sup>										</td><td>	Eqtn produces FW	</td><td>	Multiply FW by 0.48	</td></tr>
+					<tr class="table-head"><td>		</td><td>		&nbsp;		</td><td>		</td><td>										</td><td>		</td><td>	</td></tr>
+					<tr><td>		</td><td>	Acacia longifolia			</td><td>	15.0 - 57.2		</td><td>	 =0.0283168466(0.01406 * (dbh/2.54)<sup>2.18649</sup> * (3.28*ht)<sup>0.46736</sup>)	</td><td>	953	</td><td>	630	</td></tr>
+					<tr><td>		</td><td>	Acer platanoides 			</td><td>	9.7 - 102.1		</td><td>	 =0.001011 * dbh<sup>1.533</sup> * ht<sup>0.657</sup>									</td><td>	772	</td><td>	480	</td></tr>
+					<tr><td>		</td><td>	Acer saccharinum 			</td><td>	13.2 - 134.9	</td><td>	 =0.000238 * dbh<sup>1.998</sup> * ht<sup>0.596</sup>									</td><td>	721	</td><td>	440	</td></tr>
+					<tr><td><b>D</b></td><td>	Celtis occidentalis 		</td><td>	10.9 - 119.4	</td><td>	 =0.002245 * dbh<sup>2.118</sup> * ht<sup>-0.447</sup>								</td><td>	801	</td><td>	490	</td></tr>
+					<tr><td><b>B</b></td><td>	Ceratonia siliqua			</td><td>	15.5 - 71.4		</td><td>	 =0.0283168466(0.00857 * (dbh/2.54)<sup>1.79584</sup> * (3.28*ht)<sup>0.92667</sup>)	</td><td>	953	</td><td>	630	</td></tr>
+					<tr><td><b>H</b></td><td>	Cinnamomum camphora			</td><td>	12.7 - 68.8		</td><td>	 =0.0283168466(0.00982 * (dbh/2.54)<sup>2.13480</sup> * (3.28*ht)<sup>0.63404</sup>)	</td><td>	849	</td><td>	520	</td></tr>
+					<tr><td>    	</td><td>	Cupressus macrocarpa		</td><td>	15.7 - 146.6	</td><td>	 =0.0283168466(0.00576 * (dbh/2.54)<sup>2.26035</sup> * (3.28*ht)<sup>0.63013</sup>)	</td><td>	352	</td><td>	460	</td></tr>
+					<tr><td><b>a</b></td><td>	Eucalyptus globulus			</td><td>	15.5 - 130.0	</td><td>	 =0.0283168466(0.00309 * (dbh/2.54)<sup>2.15182</sup> * (3.28*ht)<sup>0.83573</sup>)	</td><td>	1121	</td><td>	620	</td></tr>
+					<tr><td><b>n</b></td><td>	Fraxinus pennsylvanica 		</td><td>	14.7 - 122.7	</td><td>	 =0.000414 * dbh<sup>1.847</sup> * ht<sup>0.646</sup>									</td><td>	785	</td><td>	530	</td></tr>
+					<tr><td><b>d</b></td><td>	Fraxinus velutina 'Modesto'	</td><td>	14.5 - 84.8		</td><td>	 =0.0283168466(0.00129 * (dbh/2.54)<sup>1.76296</sup> * (3.28*ht)<sup>1.42782</sup>)	</td><td>	732	</td><td>	517	</td></tr>
+					<tr><td>		</td><td>	Gleditsia triancanthos 		</td><td>	9.1 - 98.3		</td><td>	 =0.000489 * dbh<sup>2.132</sup> * ht<sup>0.142</sup>									</td><td>	977	</td><td>	600	</td></tr>
+					<tr><td><b>H</b></td><td>	Gymnocladus dioicus 		</td><td>	10.2 - 36.8		</td><td>	 =0.000463 * dbh<sup>1.545</sup> * ht<sup>0.792</sup>									</td><td>	769	</td><td>	550	</td></tr>
+					<tr><td><b>E</b></td><td>	Jacaranda mimosifolia		</td><td>	17.3 - 59.7		</td><td>	 =0.0283168466(0.01131 * (dbh/2.54)<sup>2.18578</sup> * (3.28*ht)<sup>0.54805</sup>)	</td><td>	657	</td><td>	380	</td></tr>
+					<tr><td><b>I</b></td><td>	Liquidambar styraciflua		</td><td>	14.0 - 54.4		</td><td>	 =0.0283168466(0.01177 * (dbh/2.54)<sup>2.31582</sup> * (3.28*ht)<sup>0.41571</sup>)	</td><td>	801	</td><td>	440	</td></tr>
+					<tr><td><b>G</b></td><td>	Magnolia grandiflora		</td><td>	14.5 - 74.2		</td><td>	 =0.0283168466(0.00449 * (dbh/2.54)<sup>2.07041</sup> * (3.28*ht)<sup>0.84563</sup>)	</td><td>	945	</td><td>	460	</td></tr>
+					<tr><td><b>H</b></td><td>	Pinus radiata				</td><td>	16.8 - 105.4	</td><td>	 =0.0283168466(0.00533 * (dbh/2.54)<sup>2.22681</sup> * (3.28*ht)<sup>0.66899</sup>)	</td><td>	401	</td><td>	440	</td></tr>
+					<tr><td><b>T</b></td><td>	Pistacia chinensis			</td><td>	12.7 - 51.3		</td><td>	 =0.0283168466(0.00292 * (dbh/2.54)<sup>2.19157</sup> * (3.28*ht)<sup>0.94367</sup>)	</td><td>	833	</td><td>	435	</td></tr>
+					<tr><td>		</td><td>	Platanus acerifolia			</td><td>	15.5 - 73.9		</td><td>	 =0.0283168466(0.01043 * (dbh/2.54)<sup>2.43642</sup> * (3.28*ht)<sup>0.39168</sup>)	</td><td>	833	</td><td>	460	</td></tr>
+					<tr><td>		</td><td>	Populus sargentii 			</td><td>	6.4 - 136.7		</td><td>	 =0.001906 * dbh<sup>1.806 * ht<sup>0.134									</td><td>	785	</td><td>	370	</td></tr>
+					<tr><td>		</td><td>	Quercus ilex				</td><td>	12.7 - 52.1		</td><td>	 =0.0283168466(0.00431 * (dbh/2.54)<sup>1.82158</sup> * (3.28*ht)<sup>1.06269</sup>)	</td><td>	1177	</td><td>	755	</td></tr>
+					<tr><td>		</td><td>	Quercus macrocarpa 			</td><td>	10.9 - 100.1	</td><td>	 =0.000169 * dbh<sup>1.956</sup> * ht<sup>0.842</sup>									</td><td>	993	</td><td>	580	</td></tr>
+					<tr><td>		</td><td>	Tilia cordata 				</td><td>	11.2 - 64.5		</td><td>	 =0.000945 * dbh<sup>1.617</sup> * ht<sup>0.59</sup>									</td><td>	673	</td><td>	320	</td></tr>
+					<tr><td>		</td><td>	Ulmus americana 			</td><td>	17.5 - 114.3	</td><td>	 =0.0012 * dbh<sup>1.696</sup> * ht<sup>0.405</sup>									</td><td>	865	</td><td>	460	</td></tr>
+					<tr><td>		</td><td>	Ulmus parvifolia chinensis	</td><td>	17.3 - 55.9		</td><td>	 =0.0283168466(0.01046 * (dbh/2.54)<sup>2.32481</sup> * (3.28*ht)<sup>0.49317</sup>)	</td><td>	903	</td><td>	540	</td></tr>
+					<tr><td>		</td><td>	Ulmus pumila				</td><td>	15.5 - 131.6	</td><td>	 =0.000338 * dbh<sup>0.855 * ht<sup>2.041									</td><td>	903	</td><td>	540	</td></tr>
+					<tr><td>		</td><td>	Zelkova serrata				</td><td>	14.5 - 86.4		</td><td>	 =0.0283168466(0.00666 * (dbh/2.54)<sup>2.36318</sup> * (3.28*ht)<sup>0.55190</sup>)	</td><td>	903	</td><td>	540	</td></tr>
+				</table>
+			</p>
+			<p align="center">
+				<br>
+				<br>
+				<table class="caption" width="700px">
+				<tr><td class="body">
+					<b>Table 5.</b> Dryweight biomass equations from the forest literature. Use constants to add roots, convert to carbon and CO<sub>2</sub>. Biomass is reduced to 80% of original predicted value to account for less biomass in urban trees.
+				</td></tr>
+				</table>
+				<br>
+				<table width="700px">
+					<tr class="table-head"><td><b>Spcode</b>	</td><td>	<b>Botanic</b>		</td><td>	<b>Common</b>		</td><td>	<b>Model</b>				</td><td>	<b>Source and DBH Range</b>	</td></tr>
+					<tr><td>	ACRU		</td><td>	Acer rubrum			</td><td>	Red maple			</td><td>	 =(0.1970*(dbh<sup>2.1933</sup>))*0.80	</td><td>	Ter-Mikaelian, Nova Scotia 0-35 cm red maple	</td></tr>
+					<tr><td>	ACSA2		</td><td>	Acer saccharum		</td><td>	Sugar maple			</td><td>	 =(0.1791*(dbh<sup>2.3329</sup>))*0.80	</td><td>	Ter-Mikaelian, Maine 3-66 cm sugar maple	</td></tr>
+					<tr><td>	PRSE2		</td><td>	Prunus serotina		</td><td>	Black cherry		</td><td>	 =(0.0716*(dbh<sup>2.6174</sup>))*0.80	</td><td>	Ter-Mikaelian, West VA 5-50 cm black cherry	</td></tr>
+					<tr><td>	QURU		</td><td>	Quercus rubra		</td><td>	Northern red oak	</td><td>	 =(0.1130*(dbh<sup>2.4572</sup>))*0.80	</td><td>	TerMikaelian, West VA 5-50 cm red oak	</td></tr>
+					<tr><td>	FRAM		</td><td>	Fraxinus americana	</td><td>	White ash			</td><td>	 =(0.1063*(dbh<sup>2.4798</sup>))*0.80	</td><td>	Ter-Mikaelian, West VA 5-50 cm white ash	</td></tr>
+					<tr><td>	TIAM		</td><td>	Tilia americana		</td><td>	American basswood	</td><td>	 =(0.0617*(dbh<sup>2.5328</sup>))*0.80	</td><td>	Ter-Mikaelian, West VA 5-50 cm basswood	</td></tr>
+					<tr><td>	BENI		</td><td>	Betula nigra		</td><td>	River birch			</td><td>	 =(0.0692*(dbh<sup>2.6606</sup>))*0.80	</td><td>	Ter-Mikaelian, West VA 5-50 cm black birch	</td></tr>
+					<tr><td>	Palms		</td><td>	General palms		</td><td>	General palms		</td><td>	 =(6.0*ht(m)+0.8)+(0.8*ht(m)+0.9)	</td><td>	Frangi and Lugo, 1985	</td></tr>
+					<tr><td>	Hardwoods	</td><td>	General hardwoods	</td><td>	General hardwoods	</td><td>	 =((EXP(-2.437+2.418*(LN(dbh)))+EXP(-3.188 + 2.226*(LN(dbh)))))*0.8	</td><td>	Tritton and Hornbeck, Northeast, 10-50 cm	</td></tr>
+				</table>
+			</p>
+			<br>
+			<h3><a name="D4.2">4.2. Energy Conservation and Reduced Emissions</a></h3>
+			<p>
+				<b>Tree Shade and Energy Conservation</b>
+				<br>
+				Tree shade reduces summer air conditioning demand, but can increase heating energy use by intercepting winter sunshine (Heisler 1986; Simpson and McPherson 1998). Trees intercept solar radiation that would otherwise fall on building windows, walls and roofs thereby reducing heat transfer to the building interior, which in turn reduces demand for cooling in summer. In winter, the same reduction in solar gain can increase heating load. The latter can be true even for deciduous trees, where leafless branches can block up to 30% of solar radiation (Heisler 1982).
+			</p>
+			<p>
+				<b>Measured and Modeled Energy Conservation Benefits Attributed to Shade</b>
+				<br>
+				Energy-saving benefits from shading trees around typical residences have been measured in the field and estimated from computer simulations. Shading from shrubs and trees in Florida (Parker 1983) and Pennsylvania (DeWalle et al.1983) resulted in cooling savings of 30% and greater. Meier (1990/91) reviewed results from five studies that measured energy savings from landscaping and reported that air conditioning energy savings commonly measured 25-50%. Akbari et al. found measured savings were 47% and 26% from 16 containerized trees ~2.4 to 6 m (~8 to 20 ft) high shading south and west facing walls and windows of homes in Sacramento, California (1997). Computer simulations for three cities (Sacramento, Phoenix, and Lake Charles) found that three mature trees around energy-efficient homes cut annual air conditioning demand by 25 to 43% and peak cooling demand by 12 to 23% (Huang and others 1987). On a per tree basis, energy simulations from 12 U.S. cities found that annual energy savings for cooling from a well-placed 25-ft tall deciduous tree ranged from 100 to 400 kWh (10 to 15%) (McPherson and Rowntree 1993). Simpson and McPherson found that the average savings per tree based on simulation of 254 residential properties was approximately 7% per tree (1998).
+			</p>
+			<p>
+				<b>Climate Effects of Trees and Energy Conservation</b>
+				<br>
+				Climate effects, which can be defined as lowered air temperature and wind speed due to the presence of urban trees, can reduce demand for both cooling and heating. In summer, lower air temperatures and wind speeds reduce conduction gains due to lower inside-outside temperature differentials, as well as wind-driven infiltration of warm air. Reduced wind speed can also increase cooling load by reducing natural ventilation, if used. In winter, air temperature reductions are minimal, but lower wind speeds act to reduce infiltration of cold air and heating loads.
+			</p>
+			<p>
+				<b>Measured and Modeled Energy Conservation Benefits Attributed to Climate Effects</b>
+				<br>
+				Maximum midday air temperature reductions of from 0.4 to 2.0 °C have been reported in the literature for neighborhood or larger scale changes in canopy cover (Huang et al. 1987; Taha et al. 1991; Sailor et al. 1992; Myrup et al. 1993; Wilkin and Jo 1993).  For Sacramento in particular, Huang et al. simulated a decrease of 1.2 °C for a 10% city-wide canopy cover increase (1987).  Sailor et al. estimated a decrease of 0.36 °C per 10% cover increase based on regression analysis of measurements at 15 residential locations scattered throughout Sacramento (1992). Cover was determined for ~100 acre areas surrounding each measurement location; substantial scatter was observed in the data.  Taha et al. consistently found midday air temperature reductions of ~1 °C/10% cover difference for an orchard compared to a dry field in Davis, California; reductions occasionally reached 2.4 °C/10% cover difference (1991). An air temperature decrease of 1°C produced a simulated reduction of 11% in annual residential air conditioning energy use (kWh) in Sacramento (Huang et al. 1987). Sailor et al. estimated a 13% reduction in cooling degree days, which are closely related to annual kWh, per 1°C drop in air temperature (1992).  McPherson found annual kWh savings of 2% per 1°C temperature decrease for various construction types in Chicago (1994).
+			</p>
+			<p>
+				<b>Building Energy Performance Simulations</b>
+				<br>
+				Calculations of annual building energy use per residential unit (unit energy consumption [UEC]) were based on computer simulations that incorporated building, climate, and shading effects, following methods outlined by McPherson and Simpson (1999). Changes in UECs due to the effects of trees (??UECs) were calculated on a per-tree basis by comparing results before and after adding trees. Building characteristics (e.g., cooling and heating equipment saturations, floor area, number of stories, insulation, window area, etc.) are differentiated by a building’s vintage, or age of construction: pre-1950, 1950–1980, and post-1980. For example, all houses from 1950–1980 vintage are assumed to have the same floor area, and other construction characteristics.
+			</p>
+			<p>
+				Prototype buildings were simulated to represent pre-1950, 1950–1980, and post-1980 construction practices for each climate zone (<b>Table 6</b>). Building footprints were modeled as square, which was found to reflect average impacts for a large number of buildings (Simpson 2002). Buildings were simulated with 1.5-ft overhangs. Blinds had a visual density of 37%, and were assumed to be closed when the air conditioner was operating. Thermostat settings were 78°F for cooling and 68°F for heating, with a 60°F night setback in winter. Unit energy consumptions are adjusted in the CTCC to account for different types of heating and cooling equipment (<b>Table 7</b>) and efficiencies (<b>Table 8</b>).
+			</p>
+			<p align="center">
+				<br>
+				<strong>Table 6.</strong> Building data by climate zone (Ritschard et al. 1992). CFA is conditioned floor area, and SEER (Seasonal Energy Efficiency Ratio) and AFUE (Annual Fuel Utilization Efficiency) are measures of heating and cooling equipment efficiencies.
+				<table width="750px">
+					<tr class="table-head">
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+						<td colspan="4" align="center"><b>R Values (hr*ft<sup>2</sup> - &deg;F/Btu) </b></td>
+						<td></td><td></td>
+					</tr>
+					<tr class="table-head">
+						<td><b>Climate Region</b></td><td><b>Vintage</b></td><td><b>Stories</b></td><td><b>CFA (m<sup>2</sup>)</b></td>
+						<td><b>Glazing Area (m<sup>2</sup>)</b></td><td><b>No. Panes</b></td><td><b>Wall Type</b></td><td><b>Foundation Type</b></td><td><b>Wall</b></td><td><b>Ceiling</b></td><td><b>Floor</b></td>
+						<td><b>Found.</b></td><td><b>Cooling SEER</b></td><td><b>Heating AFUE</b></td>
+					</tr>
+					<tr>
+						<td rowspan="3">North</td>
+						<td>Pre 1950</td><td>1</td><td>90.6</td><td>16.4</td><td>2</td><td>Wood</td><td>Basement</td><td>7</td><td>11</td><td>0</td><td>0</td><td>8</td><td>0.75</td>
+					</tr>
+					<tr>
+						<td>1950-1980</td><td>1</td><td>100.3</td><td>18.2</td><td>2</td><td>Brick</td><td>Slab</td><td>7</td><td>11</td><td>0</td><td>0</td><td>8</td><td>0.75</td>
+					</tr>
+					<tr>
+						<td>Post 1980</td><td>2</td><td>192.3</td><td>24.4</td><td>2</td><td>Wood</td><td>Basement</td><td>13</td><td>31</td><td>11</td><td>0</td><td>10</td><td>0.78</td>
+					</tr>
+					<tr>
+						<td rowspan="3">Pacific Northwest</td>
+						<td>Pre 1950</td><td>1</td><td>108.2</td><td>16.4</td><td>2</td><td>Wood</td><td>Crawl</td><td>7</td><td>7</td><td>0</td><td>0</td><td>8</td><td>0.75</td>
+					</tr>
+					<tr>
+						<td>1950-1980</td><td>1</td><td>131.5</td><td>23.1</td><td>2</td><td>Brick</td><td>Crawl</td><td>7</td><td>11</td><td>0</td><td>0</td><td>8</td><td>0.75</td>
+					</tr>
+					<tr>
+						<td>Post 1980</td><td>2</td><td>202.5</td><td>26.8</td><td>2</td><td>Aluminum</td><td>Basement</td><td>13</td><td>30</td><td>19</td><td>0</td><td>10</td><td>0.78</td>
+					</tr>
+					<tr>
+						<td rowspan="3">Temperate Interior</td>
+						<td>Pre 1950</td><td>1</td><td>90.6</td><td>16.4</td><td>2</td><td>Wood</td><td>Basement</td><td>7</td><td>11</td><td>0</td><td>0</td><td>8</td><td>0.75</td>
+					</tr>
+					<tr>
+						<td>1950-1980</td><td>1</td><td>100.3</td><td>18.2</td><td>2</td><td>Brick</td><td>Slab</td><td>7</td><td>11</td><td>0</td><td>0</td><td>8</td><td>0.75</td>
+					</tr>
+					<tr>
+						<td>Post 1980</td><td>2</td><td>192.3</td><td>24.4</td><td>2</td><td>Wood</td><td>Basement</td><td>13</td><td>31</td><td>11</td><td>0</td><td>10</td><td>0.78</td>
+					</tr>
+					<tr>
+						<td rowspan="3">Interior West</td>
+						<td>Pre 1950</td><td>1</td><td>90.6</td><td>16.4</td><td>2</td><td>Wood</td><td>Basement</td><td>7</td><td>11</td><td>0</td><td>0</td><td>8</td><td>0.75</td>
+					</tr>
+					<tr>
+						<td>1950-1980</td><td>1</td><td>100.3</td><td>18.2</td><td>2</td><td>Brick</td><td>Slab</td><td>7</td><td>11</td><td>0</td><td>0</td><td>8</td><td>0.75</td>
+					</tr>
+					<tr>
+						<td>Post 1980</td><td>1</td><td>154.2</td><td>16.6</td><td>2</td><td>Stucco</td><td>Slab</td><td>13</td><td>29</td><td>0</td><td>0</td><td>10</td><td>0.78</td>
+					</tr>
+					<tr>
+						<td rowspan="3">Southwest Desert</td>
+						<td>Pre 1950</td><td>1</td><td>90.6</td><td>16.4</td><td>2</td><td>Wood</td><td>Basement</td><td>7</td><td>11</td><td>0</td><td>0</td><td>8</td><td>0.75</td>
+					</tr>
+					<tr>
+						<td>1950-1980</td><td>1</td><td>100.3</td><td>18.2</td><td>2</td><td>Brick</td><td>Slab</td><td>7</td><td>11</td><td>0</td><td>0</td><td>8</td><td>0.75</td>
+					</tr>
+					<tr>
+						<td>Post 1980</td><td>1</td><td>154.2</td><td>16.6</td><td>2</td><td>Stucco</td><td>Slab</td><td>13</td><td>27</td><td>0</td><td>0</td><td>10</td><td>0.78</td>
+					</tr>
+					<tr>
+						<td rowspan="3">Inland Valleys</td>
+						<td>Pre 1950</td><td>1</td><td>130.1</td><td>22.7</td><td>1</td><td>Wood</td><td>Crawl</td><td>7</td><td>7</td><td>0</td><td>0</td><td>8</td><td>0.75</td>
+					</tr>
+					<tr>
+						<td>1950-1980</td><td>1</td><td>129.1</td><td>22.5</td><td>1</td><td>Stucco</td><td>Crawl</td><td>7</td><td>11</td><td>0</td><td>0</td><td>8</td><td>0.75</td>
+					</tr>
+					<tr>
+						<td>Post 1980</td><td>2</td><td>192.3</td><td>30.2</td><td>2</td><td>Stucco</td><td>Slab</td><td>11</td><td>25</td><td>0</td><td>0</td><td>10</td><td>0.78</td>
+					</tr>
+					<tr>
+						<td rowspan="3">Inland Empire</td>
+						<td>Pre 1950</td><td>1</td><td>130.1</td><td>22.7</td><td>1</td><td>Wood</td><td>Crawl</td><td>7</td><td>7</td><td>0</td><td>0</td><td>8</td><td>0.75</td>
+					</tr>
+					<tr>
+						<td>1950-1980</td><td>1</td><td>129.1</td><td>22.5</td><td>1</td><td>Stucco</td><td>Crawl</td><td>7</td><td>11</td><td>0</td><td>0</td><td>8</td><td>0.75</td>
+					</tr>
+					<tr>
+						<td>Post 1980</td><td>2</td><td>192.3</td><td>30.2</td><td>2</td><td>Stucco</td><td>Slab</td><td>11</td><td>25</td><td>0</td><td>0</td><td>10</td><td>0.78</td>
+					</tr>
+					<tr>
+						<td rowspan="3">Southern California</td>
+						<td>Pre 1950</td><td>1</td><td>130.1</td><td>22.7</td><td>1</td><td>Wood</td><td>Crawl</td><td>7</td><td>7</td><td>0</td><td>0</td><td>8</td><td>0.75</td>
+					</tr>
+					<tr>
+						<td>1950-1980</td><td>1</td><td>129.1</td><td>22.5</td><td>1</td><td>Stucco</td><td>Crawl</td><td>7</td><td>11</td><td>0</td><td>0</td><td>8</td><td>0.75</td>
+					</tr>
+					<tr>
+						<td>Post 1980</td><td>2</td><td>192.3</td><td>30.2</td><td>2</td><td>Stucco</td><td>Slab</td><td>11</td><td>25</td><td>0</td><td>0</td><td>10</td><td>0.78</td>
+					</tr>
+					<tr>
+						<td rowspan="3">Northern California</td>
+						<td>Pre 1950</td><td>1</td><td>130.1</td><td>22.7</td><td>1</td><td>Wood</td><td>Crawl</td><td>7</td><td>7</td><td>0</td><td>0</td><td>8</td><td>0.75</td>
+					</tr>
+					<tr>
+						<td>1950-1980</td><td>1</td><td>129.1</td><td>22.5</td><td>1</td><td>Stucco</td><td>Crawl</td><td>7</td><td>11</td><td>0</td><td>0</td><td>8</td><td>0.75</td>
+					</tr>
+					<tr>
+						<td>Post 1980</td><td>2</td><td>192.3</td><td>30.2</td><td>2</td><td>Stucco</td><td>Slab</td><td>11</td><td>25</td><td>0</td><td>0</td><td>10</td><td>0.78</td>
+					</tr>
+					<tr>
+						<td rowspan="3">Northeast</td>
+						<td>Pre 1950</td><td>2</td><td>130.1</td><td>21.1</td><td>2</td><td>Wood</td><td>Basement</td><td>7</td><td>7</td><td>0</td><td>0</td><td>8</td><td>0.75</td>
+					</tr>
+					<tr>
+						<td>1950-1980</td><td>2</td><td>182.1</td><td>35.8</td><td>2</td><td>Wood</td><td>Basement</td><td>7</td><td>22</td><td>0</td><td>0</td><td>8</td><td>0.75</td>
+					</tr>
+					<tr>
+						<td>Post 1980</td><td>2</td><td>194.2</td><td>22.6</td><td>2</td><td>Wood</td><td>Basement</td><td>13</td><td>27</td><td>19</td><td>0</td><td>10</td><td>0.78</td>
+					</tr>
+					<tr>
+						<td rowspan="3">Midwest</td>
+						<td>Pre 1950</td><td>2</td><td>146.8</td><td>28.8</td><td>2</td><td>Wood</td><td>Basement</td><td>7</td><td>7</td><td>0</td><td>0</td><td>8</td><td>0.75</td>
+					</tr>
+					<tr>
+						<td>1950-1980</td><td>1</td><td>102.2</td><td>20.1</td><td>2</td><td>Wood</td><td>Basement</td><td>7</td><td>22</td><td>0</td><td>0</td><td>8</td><td>0.75</td>
+					</tr>
+					<tr>
+						<td>Post 1980</td><td>2</td><td>206.2</td><td>22.5</td><td>2</td><td>Wood</td><td>Basement</td><td>19</td><td>32</td><td>0</td><td>5</td><td>10</td><td>0.78</td>
+					</tr>
+					<tr>
+						<td rowspan="3">Lower Midwest</td>
+						<td>Pre 1950</td><td>2</td><td>146.8</td><td>28.8</td><td>2</td><td>Wood</td><td>Basement</td><td>7</td><td>7</td><td>0</td><td>0</td><td>8</td><td>0.75</td>
+					</tr>
+					<tr>
+						<td>1950-1980</td><td>1</td><td>102.2</td><td>20.1</td><td>2</td><td>Wood</td><td>Basement</td><td>7</td><td>22</td><td>0</td><td>0</td><td>8</td><td>0.75</td>
+					</tr>
+					<tr>
+						<td>Post 1980</td><td>2</td><td>206.2</td><td>26.2</td><td>2</td><td>Wood</td><td>Basement</td><td>11</td><td>29</td><td>0</td><td>0</td><td>10</td><td>0.78</td>
+					</tr>
+					<tr>
+						<td rowspan="3">South</td>
+						<td>Pre 1950</td><td>1</td><td>108.2</td><td>19.2</td><td>2</td><td>Wood</td><td>Crawl</td><td>7</td><td>7</td><td>0</td><td>0</td><td>8</td><td>0.75</td>
+					</tr>
+					<tr>
+						<td>1950-1980</td><td>1</td><td>131.5</td><td>23.1</td><td>2</td><td>Brick</td><td>Crawl</td><td>7</td><td>11</td><td>0</td><td>0</td><td>8</td><td>0.75</td>
+					</tr>
+					<tr>
+						<td>Post 1980</td><td>2</td><td>205.5</td><td>24.5</td><td>2</td><td>Wood</td><td>Basement</td><td>11</td><td>27</td><td>19</td><td>0</td><td>10</td><td>0.78</td>
+					</tr>
+					<tr>
+						<td rowspan="3">Coastal Plain</td>
+						<td>Pre 1950</td><td>1</td><td>98</td><td>20.1</td><td>2</td><td>Wood</td><td>Slab</td><td>7</td><td>7</td><td>0</td><td>0</td><td>8</td><td>0.75</td>
+					</tr>
+					<tr>
+						<td>1950-1980</td><td>1</td><td>129.1</td><td>26.6</td><td>2</td><td>Brick</td><td>Slab</td><td>7</td><td>19</td><td>0</td><td>0</td><td>8</td><td>0.75</td>
+					</tr>
+					<tr>
+						<td>Post 1980</td><td>1</td><td>150.5</td><td>19.9</td><td>1</td><td>Brick</td><td>Slab</td><td>11</td><td>19</td><td>0</td><td>0</td><td>10</td><td>0.78</td>
+					</tr>
+					<tr>
+						<td rowspan="3">Central Florida</td>
+						<td>Pre 1950</td><td>1</td><td>108.2</td><td>19.2</td><td>2</td><td>Wood</td><td>Crawl</td><td>7</td><td>7</td><td>0</td><td>0</td><td>8</td><td>0.75</td>
+					</tr>
+					<tr>
+						<td>1950-1980</td><td>1</td><td>131.5</td><td>23.1</td><td>2</td><td>Brick</td><td>Crawl</td><td>7</td><td>11</td><td>0</td><td>0</td><td>8</td><td>0.75</td>
+					</tr>
+					<tr>
+						<td>Post 1980</td><td>1</td><td>150.5</td><td>19.9</td><td>1</td><td>Stucco</td><td>Slab</td><td>11</td><td>25</td><td>0</td><td>0</td><td>10</td><td>0.78</td>
+					</tr>
+					<tr>
+						<td rowspan="3">Tropical</td>
+						<td>Pre 1950</td><td>1</td><td>108.2</td><td>19.2</td><td>2</td><td>Wood</td><td>Crawl</td><td>7</td><td>7</td><td>0</td><td>0</td><td>8</td><td>0.75</td>
+					</tr>
+					<tr>
+						<td>1950-1980</td><td>1</td><td>131.5</td><td>23.1</td><td>2</td><td>Brick</td><td>Crawl</td><td>7</td><td>11</td><td>0</td><td>0</td><td>8</td><td>0.75</td>
+					</tr>
+					<tr>
+						<td>Post 1980</td><td>1</td><td>150.5</td><td>19.9</td><td>1</td><td>Stucco</td><td>Slab</td><td>11</td><td>25</td><td>0</td><td>0</td><td>10</td><td>0.78</td>
+					</tr>
+
+				</table>
+				<br>
+				Weather data for typical meteorological years (TMY2) from each climate zone were used (National Solar Radiation Data Base 2006).
+			</p>
+			<p align="center">
+				<br>
+				<b>Table 7.</b> Cooling equipment factors
+				<table width="350px">
+					<tr class="table-head">
+						<td></td><td colspan="3" align="center"><b>Building Vintage</b></td>
+					</tr>
+					<tr class="table-head">
+						<td></td><td><b>pre-1950</b></td><td><b>1950-1980</b></td><td><b>post-1980</b></td>
+					</tr>
+					<tr>
+						<td>Central air/heat pump</td><td>1</td><td>1</td><td>1</td>
+					</tr>
+					<tr>
+						<td>Evaporative Cooler</td><td>0.33</td><td>0.33</td><td>0.33</td>
+					</tr>
+					<tr>
+						<td>Window/Wall Unit</td><td>0.25</td><td>0.25</td><td>0.25</td>
+					</tr>
+					<tr>
+						<td>None</td><td>0</td><td>0</td><td>0</td>
+					</tr>
+				</table>
+			</p>
+			<p align="center">
+				<br>
+				<b>Table 8.</b> Heating and cooling equipment efficiencies.
+				<table width="350px">
+					<tr class="table-head">
+						<td></td><td colspan="3" align="center"><b>Building Vintage</b></td>
+					</tr>
+					<tr class="table-head">
+						<td></td><td><b>pre-1950</b></td><td><b>1950-1980</b></td><td><b>post-1980</b></td>
+					</tr>
+					<tr>
+						<td>Natural Gas</td><td>1</td><td>1</td><td>1</td>
+					</tr>
+					<tr>
+						<td>Heat Pump</td><td>0.110</td><td>0.115</td><td>0.098</td>
+					</tr>
+					<tr>
+						<td>Electric Resistance</td><td>0.220</td><td>0.229</td><td>0.229</td>
+					</tr>
+					<tr>
+						<td>None</td><td>0</td><td>0</td><td>0</td>
+					</tr>
+				</table>
+			</p>
+			<br>
+			<br>
+			<p>
+				<b>Single-Family Residence Adjustments</b>
+				<br>
+				<br>
+				Unit energy consumptions for simulated single-family residences were adjusted for type and saturation of heating and cooling equipment, and for various factors (F) that modify the effects of shade and climate on heating and cooling loads. For cooling we have:
+				<br>
+				<br>
+				&Delta;UEC<sub>c</sub> = &Delta;UEC<sup>raw</sup><sub>c</sub> * F<sub>c</sub> &nbsp;&nbsp;&nbsp;&nbsp;<b>[Eq.1]</b>
+				<br>
+				<br>
+				where
+				<br>
+				F<sub>c</sub> = F<sub>c_equipment</sub> * F<sub>adjacent shade</sub> * F<sub>multiple tree</sub>
+				<br>
+				F<sub>c_equipment</sub> = Sat<sub>CAC</sub> + Sat<sub>window</sub> * 0.25 + Sat<sub>evap</sub> * 0.33
+				<br>
+				<br>
+				For heating we have:
+				&Delta;UEC<sub>h</sub> = &Delta;UEC<sup>raw</sup><sub>h</sub> * F<sub>h</sub>  &nbsp;&nbsp;&nbsp;&nbsp;<b>[Eq.2]</b>
+				<br>
+				<br>
+				where
+				<br>
+				F<sub>h</sub> = F<sub>h_equipment</sub> * F<sub>adjacent shade</sub> * F<sub>multiple tree</sub>
+				<br>
+				F<sub>h_equipment</sub> = Sat<sub>NG</sub>
+				<br>
+				<br>
+				Total change in energy use for a particular land use is found by multiplying the change in UEC per tree by the number of trees (N):
+				<br>
+				<br>
+				Total Change = <i>N</i> * &Delta;UEC<sub>x</sub>  &nbsp;&nbsp;&nbsp;&nbsp;<b>[Eq.3]</b>
+				<br>
+				<br>
+				Where subscript <i>x</i> refers to cooling or heating.
+				<br>
+				<br>
+				Cooling and heating effects are reduced based on the type of air conditioning or heating equipment and vintage. Equipment factors of 33 and 25% were assigned to homes with evaporative coolers and room air conditioners, respectively. These factors were combined with equipment saturations to account for reduced energy use and savings compared to those simulated for homes with central air conditioning (Fc_equipment).
+				<br>
+			</p>
+			<p>
+				<b>Shading Effects</b>
+				<br>
+				Shading effects for approximately 20 of the most common tree species were simulated in each climate zone for three tree-to-building distances (0–20 ft, 20–40 ft, 40–60 ft), eight orientations (cardinal and inter-cardinal point of the compass) and for nine tree sizes. It was assumed that street trees greater than 60 ft from buildings provided no direct shade on walls and windows and hence no energy-related benefit due to tree shade.
+				<br>
+				<br>
+				The shading coefficients of the trees in leaf (gaps in the crown as a percentage of total crown silhouette) were estimated using a photographic method that has been shown to produce good estimates (Wilkinson 1991). Crown areas were obtained using the method of Peper and McPherson from digital photographs of trees from which background features were digitally removed (2003). Values for tree species that were not sampled, and leaf-off values for use in calculating winter shade, were based on published values where available (McPherson 1984; Hammond et al. 1980). Where published values were not available, visual densities were assigned based on taxonomic considerations (trees of the same genus were assigned the same value) or observed similarity to known species. Foliation periods for deciduous trees were obtained from the literature (McPherson 1984; Hammond et al. 1980) and adjusted for each climate zone based on consultation with forestry supervisors and local nursery representatives.
+				<br>
+				<br>
+				Estimated shade savings for all residential structures could be adjusted to account for shading of neighboring buildings and for overlapping shade from trees adjacent to one another. Homes adjacent to those with shade trees may benefit from the trees on the neighboring properties. For example, 23% of the trees planted for the Sacramento Shade program shaded neighboring homes, resulting in an additional estimated energy savings equal to 15% of that found for program participants, which gives F<sub>adjacent shade</sub> &#8776; 1.15. In addition, shade from multiple trees may overlap, resulting in less building shade from an added tree than would result if there were no existing trees. Simpson estimated that the fractional reductions in average cooling and heating energy use were approximately 6% and 5% percent per tree, respectively, for each tree added after the first (2002). Simpson also found an average of 2.5–3.4 existing trees per residence in Sacramento (1998). A multiple tree reduction factor of 85% is equivalent to approximately three existing trees per residence. Since these factors are difficult to assess and approximately compensating, it was assumed in the analysis that F<sub>adjacent shade</sub> × F<sub>multiple tree</sub> = 1.0.
+				<br>
+			</p>
+			<p>
+				<b>Climate Effects</b>
+				<br>
+				In addition to localized shade effects, which are assumed to accrue only to trees within 60 ft of buildings, lowered air temperatures and wind speeds due to neighborhood tree cover (referred to as climate effects) produce a net decrease in demand for summer cooling and winter heating. Reduced wind speeds by themselves may increase or decrease cooling demand, depending on the circumstances. To estimate climate effects on energy use, air-temperature and wind-speed reductions were estimated as a function of neighborhood canopy cover from published values following McPherson and Simpson, then used as input for the building-energy-use simulations described earlier (1999). Peak summer air temperatures were assumed to be reduced by 0.2°F for each percentage increase in canopy cover. Wind-speed reductions were based on the change in total tree plus building canopy cover resulting from the addition of the particular tree being simulated (Heisler 1990). An effective lot size (actual lot size plus a portion of adjacent street and other rights-of-way) of 10,000 ft<sup>2</sup> was assumed, and one tree on average was assumed per lot.
+				<br>
+			</p>
+			<p>
+				<b>Upper Limit on Energy Conservation Benefits Attributed to Shade and Climate Effects</b>
+				<br>
+				In certain climates, for example coastal southern California or the high Sierra, air temperatures can be at or below the typical air conditioner set point (e.g., 27 °C, 80 °F) when solar radiation loads are high. In these circumstances, solar loading can account for most of the air conditioning load. Strategic placement of a large tree to shade a building for large portions of the day under these circumstances could in fact reduce the cooling load by 50% or more. As noted above, typical savings are in the 10-30% range.  To limit shade benefits to values reported in the literature an upper limit is set at 25% of the total cooling load. While larger savings are possible, total cooling loads and the kWh are generally small under the conditions that produce such large savings, so underestimation of savings due to this imposed upper limit is minimal.
+				<br>
+				<br>
+				Benefits resulting from climate effects are treated the same as shading benefits by imposing an upper limit at 25% of the total cooling load. Hence the total cooling energy benefit is the sum of shade and climate benefits, each individually limited to 25% of the total cooling load. This can be restated as:
+				<br>
+				<br>
+				&Delta;Cooling = minimum(&Delta;shade effect, 0.25*Total Cooling Load) + minimum(&Delta;Climate Effect, 0.25*Total Cooling Load)
+				<br>
+				<br>
+				Where:
+				<br>
+				- &Delta;shade effect is the calculated change in energy use from shading,
+				<br>
+				- &Delta;climate effect is the calculated change in energy use from climate, and
+				<br>
+				- Total cooling load is the total calculated cooling load.
+				<br>
+				<br>
+				We account here for the effects of tree cover change on the scale of neighborhoods or larger, since little information is available relating the effect of individual trees on air temperature and wind speed. Since the calculations are done for individual properties, the aggregate canopy cover increase calculated for the individual properties must approximate the cover change for the neighborhood (or larger area) as a whole. The practical result of this is that the climate effect should only be calculated for a program that is clustering trees to create an appreciable increase in local tree canopy cover.
+				<br>
+			</p>
+		</td></tr>
+		<tr><td class="body">
+			<br>
+			<br>
+			<a name="D5"></a>
+			<h3>5. Initial Uncertainty Analysis</h3>
+			<p>
+				This initial uncertainty analysis estimates standard errors in CTCC’s estimates of CO<sub>2</sub> emission reductions due to uncertainty in the emissions factor, interpolation, and energy analysis (&sigma;<sub>e</sub>, &sigma;<sub>f</sub>, and &sigma;<sub>E</sub>). While a complete analysis of these errors is not possible here, preliminary estimates are given based on the following analysis.
+			</p>
+			<p>
+				Greater uncertainty is involved with default emissions factors (&sigma;<sub>e</sub>) supplied by the CTCC than for locally derived values, since default factors are based on past data, and reflect only the largest utility service areas in the state. We assume a relative standard error (&sigma;<sub>e</sub>/e) of ±10% for default factors, and ±5% when locally derived data are utilized.
+			</p>
+			<p>
+				Uncertainty related to interpolation (&sigma;<sub>f</sub>) results from differences between the functional form used for interpolation here (linear) and the unknown form, a function of DBH or time. Empirical curve fitting could be used to reduce interpolation error, tested with additional between-class simulation runs. For now it is assumed based on the observed curve shapes that this relative error is ±10%. Overall uncertainty is relatively insensitive to the value selected.
+			</p>
+			<p>
+				Due to the many inputs and complexities of the building energy simulation modeling, which includes tree and building factors, sE is the most difficult standard error to quantify. Some of these factors, such as occupant behavior, are extremely difficult to quantify or verify. That being said, studies have been reported that deal with this issue, including one that compares actual measurements with simulated results.
+			</p>
+			<p>
+				We know of only one instance where simulations of energy savings effects of trees were compared to measurements. Akbari et al. made detailed measurements of two homes with and without 16 containerized trees ~ 2.4 to 6 m high shading south and west facing walls and windows (1997). Measured savings were 47 and 26% over approximately 100 day summer measurement periods in Sacramento, California. Computer simulations were found to consistently underestimate the measured savings by a factor of two. Complete calibration of the model was not one of the objectives of the study, so the exact cause(s) of the discrepancies were not elucidated. Initial indications based on the limited data available are that simulated energy savings from shade trees may be conservative estimates of actual savings.
+			</p>
+			<p>
+				As a preliminary estimate of the relative error in the building energy simulation modeling we use the value from Hildebrandt and Sarkovich of ±25%, recognizing that additional analysis will be necessary for individual consideration of many factors involved (1998).
+			</p>
+			<p>
+				These preliminary estimates of relative standard error of &sigma;<sub>e</sub>/e = 10%, &sigma;<sub>f</sub>/f = 10%, and &sigma;<sub>E</sub>/E = 25% were substituted into an equation to calculate an initial estimate of the error in reduced CO<sub>2</sub> emissions. This resulting error will depend on the relative size of terms in the equation, and particularly on the relative size of cooling savings compared to heating penalty. Typical errors appear to be ~30%, but can be larger if increased emissions from heating become similar in size to the reduced emissions from heating, e.g. e<sub>1</sub>E<sub>n,1</sub> &asymp; e<sub>2</sub>E<sub>n,2</sub>. Of course, in the latter case the net change in emissions becomes small, as does the magnitude of the error.
+			</p>
+		</td></tr>
+		<tr><td class="body">
+			<br>
+			<br>
+			<a name="D6"></a>
+			<h3>6. Frequently Asked Questions</h3>
+			<p>
+				<ul>
+					<li>
+					<b>Q: What is this product? </b>
+					<br>
+					A: CTCC is the CUFR Tree Carbon Calculator and it is a tool that calculates the amount of biomass and carbon stored in a tree, as well as the amount sequestered annually. The CTCC also provides information on the effects of trees on residential heating and cooling energy use and associated greenhouse gas (GHG) emissions.
+					</li>
+					<br>
+					<br>
+					<li>
+					<b>Q: What kind of software is it and what does it do?</b>
+					<br>
+					A: The CTCC is programmed in an Excel spreadsheet and provides carbon-related information for a single tree located in one of sixteen U.S. climate zones.
+					</li>
+					<br>
+					<br>
+					<li>
+					<b>Q: Does this software need any special computer requirements to work? </b>
+					<br>
+					A: No. Only Microsoft Excel is necessary.
+					</li>
+					<br>
+					<br>
+					<li>
+					<b>Q: What information do I need beforehand to fill out the CTCC?</b>
+					<br>
+					A: Section 3.1 in the help file answers this question in detail. You need to know the region where the trees are located, the species you are measuring and the d.b.h. or age of each tree. If you want to know effects on building energy use you need information about the heating and cooling equipment, the distance of each tree to the building, and its azimuth (compass bearing).
+					</li>
+					<br>
+					<br>
+					<li>
+					<b>Q: Where can I find more information about tree species identification?</b>
+					<br>
+					A: There are many available sources to help you with tree species identification. Online resources where you can find help include:
+					<br>
+					<br>
+					- Cal Poly SelecTree (<a href="http://selectree.calpoly.edu/">http://selectree.calpoly.edu/</a>) Tree selection guide that offers species information
+					<br>
+					<br>
+					- University of Florida (<a href="http://hort.ifas.ufl.edu/woody/species.shtml">http://hort.ifas.ufl.edu/woody/species.shtml</a> or <a href="http://hort.ufl.edu/trees/">http://hort.ufl.edu/trees/</a>) Information on more than 1,200 trees
+					<br>
+					<br>
+					- Virginia Tech Tree Fact Sheets (<a href="http://www.cnr.vt.edu/DENDRO/DENDROLOGY/factsheets.cfm">http://www.cnr.vt.edu/DENDRO/DENDROLOGY/factsheets.cfm</a>) Search or browse options with good identification photographs
+					<br>
+					<br>
+					Other options include contacting your local cooperative extension office for further help or using manuals such as Hortus Third to get the id information you need.
+					<br>
+					</li>
+					<br>
+					<br>
+					<li>
+					<b>Q: Do I need any special equipment to measure input data?</b>
+					<br>
+					A: A dbh tape and a compass will be enough.
+					</li>
+					<br>
+					<br>
+					<li>
+					<b>Q: Why do I need to measure the height of a palm instead of the d.b.h?</b>
+					<br>
+					A: Height is a more representative parameter of palm growth than d.b.h. Palms are monocots. Most seed plants increase their diameter through secondary growth, producing wood and bark, but monocots have lost this ability. Instead of systematically adding wood (and girth) annually like dicots, palms add height through growth at the apical meristem (the plant shoot where palm fronds develop).
+					</li>
+					<br>
+					<br>
+					<li>
+					<b>Q: How do I measure the height of a palm? </b>
+					<br>
+					A: Height is a more representative parameter of palm growth than d.b.h. Palms are monocots. Most seed plants increase their diameter through secondary growth, producing wood and bark, but monocots have lost this ability. Instead of systematically adding wood (and girth) annually like dicots, palms add height through growth at the apical meristem (the plant shoot where palm fronds develop).
+					</li>
+					<br>
+					<br>
+					<li>
+					<b>Q: How do I know which climate zone I must use? </b>
+					<br>
+					A: A climate zone map of the United States, divided into 16 zones, is available through the help menu. You may access this two different ways. Either click on the <b>Help Menu</b> button and scroll to Section 3.1 to view the map or click on the climate zone cell in the CTCC and then click on <b>Help for Selected Cell</b>, then select <b>More Info</b>.
+					</li>
+					<br>
+					<br>
+					<li>
+					<b>Q: Can I use a different climate zone than the one I am supposed to if I find the tree I am looking for in that list? </b>
+					<br>
+					A: No. Climate zones are not only about tree lists, but about meteorological data, tree conditions, growth rates and energy factors specific to each area. You must select the climate zone indicated in the map for your study location
+					</li>
+					<br>
+					<br>
+					<li>
+					<b>Q: What do I do if my species is not in the corresponding list for my region? </b>
+					<br>
+					A: There are 20-30 species in each climate zone. If you want to calculate carbon and energy results for a species not included in the list, choose the species from the same climate zone with the most similar mature size and growth rate.
+					</li>
+					<br>
+					<br>
+					<li>
+					<b>Q: Why do I receive errors about workbooks not opening when initializing CCTC main workbook? </b>
+					<br>
+					A: Make sure to set macro security settings on "Low" to allow VBA application code to execute. To do so, click Tools-macro-security and choose ‘Low’.
+					</li>
+					<br>
+					<br>
+					<li>
+					<b>Q: How do I know if the calculator has loaded properly?</b>
+					<br>
+					A: You should not see REF or N/A in any cell. If you do, it is incorrectly loaded and will not work properly. Check the security level of your macros and try again.
+					</li>
+					<br>
+					<br>
+					<li>
+					<b>•	Q: Do I need to fill-in all three worksheets before the calculator will work? </b>
+					<br>
+					A: No. The calculator only needs input data for the shaded cells in the main CTCC worksheet to work. The Data and Output templates are one possible way for you to keep track of the input data and results for each tree in your project.
+					</li>
+					<br>
+					<br>
+					<li>
+					<b>Q: How many trees can I run in the calculator at a time?</b>
+					<br>
+					A: Trees must be calculated one by one, and records of results can be kept in a different worksheet if wanted for later compilation of results.
+					</li>
+					<br>
+					<br>
+					<li>
+					<b>Q: How will I know when the CTCC has finished calculating my input values?</b>
+					<br>
+					A: The calculator provides results in the bottom table in the main CTCC worksheet. There will always be an instant result as long as all the shaded input cells are filled. To make sure that the values in the output table are correct, make sure that all the input cells match your collected information.
+					</li>
+					<br>
+					<br>
+					<li>
+					<b>Q: What kind of units are the results in? </b>
+					<br>
+					A: Results are provided in both English and SI units. You can select the most convenient for you.
+					</li>
+					<br>
+					<br>
+					<li>
+					<b>Q: How can the outputs be used?</b>
+					<br>
+					A: CTCC outputs can be used to estimate GHG benefits for existing trees or to forecast future benefits.
+					</li>
+					<br>
+					<br>
+					<li>
+					<b>Q: Can I obtain outputs for dead trees?</b>
+					<br>
+					A: Yes. The carbon stored in dead trees can be reported when used for wood products or bioenergy projects, but will not be registered at this time. Only live trees, however, are eligible for energy conservation projects.
+					</li>
+					<br>
+					<br>
+					<li>
+					<b>Q: Can I obtain outputs for dead trees?</b>
+					<br>
+					A: Yes. The carbon stored in dead trees can be reported when used for wood products or bioenergy projects, but will not be registered at this time. Only live trees, however, are eligible for energy conservation projects.
+					</li>
+					<br>
+					<br>
+					<li>
+					<b>Q: Are energy and carbon dioxide sequestration results for the total life of the tree or just one year? </b>
+					<br>
+					A: They are annual results, based on the amount of carbon dioxide sequestered and energy saved during a single year. Outputs for carbon dioxide stored and aboveground biomass are for the time from the tree’s planting to its specified size or age.
+					</li>
+					<br>
+					<br>
+					<li>
+					<b>Q: What is the difference between storage and sequestration?</b>
+					<br>
+					A: Sequestration is an annual measure of the CO<sub>2</sub> stored as biomass, whereas storage accounts for the amount of CO<sub>2</sub> sequestered by the tree every year after it was planted.
+					</li>
+					<br>
+					<br>
+					<li>
+					<b>Q: Why are the carbon output values I receive for palm trees so much lower than the outputs for the other tree species?</b>
+					<br>
+					A: As monocots, palms do not have the same carbon sequestering potential as woody tree types. Palms contain more water and less biomass than woody trees. When that water is removed, there is less remaining biomass weight per cubic foot than for woody tree types,
+					</li>
+					<br>
+					<br>
+					<li>
+					<b>Q: How can I keep track of the results I obtain for each tree?</b>
+					<br>
+					A: Some special steps are required to copy single tree results from the output table to an output template, where data are compiled for many trees. All cells on the ‘CTCC’ page of the workbook except the gray input section have been locked (using the Excel ‘protect’ feature) to prevent inadvertent user modification. To copy values from the Results section, this lock can be overridden by going to "Tools" in the main menu, clicking on "Protection", and then selecting "Unprotect Sheet". This allows output cells to be selected and data to be copied. If data are to be pasted into another excel workbook, then the user should select “Edit” from the main menu, click on “Paste Special”, then select “Values” in the dialog box (necessary since formulas actually populate these cells), and finally click on “OK”. For example, cells C35:J35 can be copied from the ‘CTCC’ page and then pasted as values into successive rows in columns C:J of the ‘Output Template’ page to create a table of results.
+					</li>
+				</ul>
+			</p>
+		</td></tr>
+		<tr><td class="body">
+			<br>
+			<br>
+			<a name="D7"></a>
+			<h3>7. References</h3>
+			<p class="refs">
+				<ul>
+					<li>
+					Akbari, H.; D. Kurn; H. Taha; S. Bretz and J. Hanford.1997. Peak power and cooling energy savings of shade trees. Energy and Buildings: Special Issue on Urban Heat Islands and Cool Communities. Excerpts from Lawrence Berkeley National Laboratory Report LBL-34411, Berkeley, CA. 25(2): 139-148.
+					</li>
+					<br>
+					<br>
+					<li>
+					Air Resources Board. 2007. Air Resources Board Draft Emission Factors for Mandatory Reporting Program.
+					</li>
+					<br>
+					<br>
+					<li>
+					California Climate Action Registry. 2008. Urban forest project reporting protocol. V.1.
+					<br>Available at: <a href="http://www.climateregistry.org/resources/docs/protocols/progress/urban-forest/urban-forest-protocol-final-082008.pdf">http://www.climateregistry.org/resources/docs/protocols/progress/urban-forest/urban-forest-protocol-final-082008.pdf</a>.
+					<br>Retrieved October 22, 2008.
+					</li>
+					<br>
+					<br>
+					<li>
+					California Energy Commission (CEC). 2007. California electric utility service areas - 2007. Retrieved Dec 17, 2007.
+					</li>
+					<br>
+					<br>
+					<li>
+					Energy Information Administration. 2009. Fuel emissions factors.
+					<br>Available at: <a href="http://www.eia.doe.gov/oiaf/1605/excel/Fuel%20Emission%20Factors.xls">http://www.eia.doe.gov/oiaf/1605/excel/Fuel%20Emission%20Factors.xls</a>.
+					<br>Retrieved July 20, 2009.
+					</li>
+					<br>
+					<br>
+					<li>
+					DeWalle, D.R.; G.M. Heisler and R.E. Jacobs. 1983. Forest home sites influence heating and cooling energy. J. For. 81: 84-88.
+					</li>
+					<br>
+					<br>
+					<li>
+					Hammond J.; J. Zanetto and C. Adams. 1980. Planning solar neighborhoods. Sacramento, CA: California Energy Commission. 179.
+					</li>
+					<br>
+					<br>
+					<li>
+					Heisler, G.M. 1982. Reduction of solar radiation by tree crowns. The renewable challenge. In: Proceedings: 1982 Annual Meeting of the American Section of International Solar Energy Society, Houston. TX. American Solar Energy Society Boulder, CO. pp 133–139.
+					</li>
+					<br>
+					<br>
+					<li>
+					Heisler, G.M. 1986. Energy savings with trees, J. Arbor., 12: 113
+					</li>
+					<br>
+					<br>
+					<li>
+					Heisler, G.M. 1990. Mean wind speed below building height in residential neighborhoods with different tree densities. American Society of Heating, Refrigerating, and Air-Conditioning Engineers (ASHRAE) Transactions 96(1): 1389-1395.
+					</li>
+					<br>
+					<br>
+					<li>
+					Hildebrandt, E.W. and  M. Sarkovich. 1998. Assessing the cost effectiveness of SMUD's shade tree program. Atmospheric Environment. 32: 85–94.
+					</li>
+					<br>
+					<br>
+					<li>
+					Huang, Y.J.; H. Akbari; H. Taha and A.H. Rosenfeld. 1987. The potential of vegetation in reducing summer cooling loads in residential buildings, J. Clim. & Appl. Meteorol., 26: 1103.
+					</li>
+					<br>
+					<br>
+					<li>
+					Husch, B.; C.I. Miller and T.W. Beers. 1982. Forest Mensuration  John Wiley and Sons. New York, NY.
+					</li>
+					<br>
+					<br>
+					<li>
+					Lieth H. 1963. The role of vegetation in the carbon dioxide content of the atmosphere. J. Geophys. Res. 68: 3887-3898.
+					</li>
+					<br>
+					<br>
+					<li>
+					Maco, S.E.; E.G. McPherson; J. R. Simpson; P.J. Peper and Q. Xiao. 2005. City of Berkeley, California Municipal Tree Resource Analysis. Davis, CA, USDA Forest Service, Pacific Southwest Research Station, Center for Urban Forest Research: 50.
+					</li>
+					<br>
+					<br>
+					<li>
+					Markwardt, L.J. and T.R.C. Wilson. 1935. Strength and related properties of woods grown in the United States. Tech. Bull. No. 479. Madison, WI. USDA Forest Service, Forest Products Laboratory: 113.
+					</li>
+					<br>
+					<br>
+					<li>
+					McHale, M.R.; I.C. Burke; M.A. Lefsky; P.J. Peper and E.G. McPherson. 2009. Urban forest biomass estimates: is it important to use allometric relationships developed specifically for urban trees? Urban Ecosys. 12:95-113.
+					</li>
+					<br>
+					<br>
+					<li>
+					McPherson, E.G. and R.A. Rowntree. 1993. Energy conservation potential of urban tree planting. Journal of Arboriculture, 19, 321-331.
+					</li>
+					<br>
+					<br>
+					<li>
+					McPherson, E.G. 1994. Benefits and costs of tree planting and care in Chicago. In McPherson, E.G.; D.J. Nowak and R. Rowntree (Eds.) Chicago's Urban Forest Ecosytem: Results of the Chicago Urban Forest Climate Project. USDA Forest Service, Northeastern Forest Experiment Station, Radnor, PA. p.117-135.
+					</li>
+					<br>
+					<br>
+					<li>
+					McPherson, E.G. and J.R. Simpson. 1999. Carbon dioxide reductions through urban forestry: guidelines for professional and volunteer tree planters. Gen. Tech. Rep. PSW-171.  Albany, CA: USDA Forest Service, Pacific Southwest Research Station: 237.
+					</li>
+					<br>
+					<br>
+					<li>
+					McPherson, E.G.; J.R. Simpson; P.J. Peper and Q. Xiao. 1999. Benefits and costs of Modesto's municipal urban forest. USDA Forest Service, Pacific Southwest Research Station, Center for Urban Forest Research. Davis, CA: 42.
+					</li>
+					<br>
+					<br>
+					<li>
+					McPherson, E.G.; J.R. Simpson; P.J. Peper and Q. Xiao. 1999. Tree Guidelines for San Joaquin Valley Communities. Local Government Commission, Sacramento, CA: 64.
+					</li>
+					<br>
+					<br>
+					<li>
+					McPherson, E.G.; J.R. Simpson; P.J. Peper; K.I. Scott and Q. Xiao. 2000. Tree Guidelines for Coastal Southern California Communities. P.S.R.S. USDA Forest Service, Center for Urban Forest Research. Sacramento, CA, Local Government Commission: 98.
+					</li>
+					<br>
+					<br>
+					<li>
+					McPherson, E.G.; J.R. Simpson; P.J. Peper; Q. Xiao; D.R. Pittenger and D.R. Hodel. 2001. Tree Guidelines for Inland Empire Communities. Local Government Commission, Sacramento, CA: 116.
+					</li>
+					<br>
+					<br>
+					<li>
+					McPherson, E.G.; S.E. Maco; J.R. Simpson; P.J. Peper; Q. Xiao; A.M. VanDerZanden and N. Bell. 2002. Western Washington and Oregon Community Tree Guide: Benefits, Costs, and Strategic Planting. International Society of Arboriculture, Pacific Northwest, Silverton, OR: 76.
+					</li>
+					<br>
+					<br>
+					<li>
+					McPherson, E.G.; J.R. Simpson; P.J. Peper; Q. Xiao; S.E. Maco and P.J. Hoefer. 2003. Northern Mountain and Prairie Community Tree Guide: Benefits, Costs and Strategic Planting. Center for Urban Forest Research, USDA Forest Service, Pacific Southwest Research Station, CA: 88.
+					</li>
+					<br>
+					<br>
+					<li>
+					McPherson, E. G., J. R. Simpson, P. J. Peper, S. E. Maco, Q. Xiao and E. Mulrean (2004). Desert Southwest Community Tree Guide: Benefits, Costs and Strategic Planting. Phoenix, AZ, Arizona Community Tree Council, Inc.: 76.
+					</li>
+					<br>
+					<br>
+					<li>
+					McPherson, E.G.; J.R. Simpson; P.J. Peper; S.E. Maco; Q. Xiao and E. Mulrean. 2004. Desert Southwest Community Tree Guide: Benefits, Costs and Strategic Planting. Phoenix, AZ: Arizona Community Tree Council, Inc.: 81.
+					</li>
+					<br>
+					<br>
+					<li>
+					McPherson, E.G.;  J.R. Simpson; P.J. Peper; S.E. Maco; S.L. Gardner; K.E. Vargas and Q. Xiao. 2006. Piedmont Community Tree Guide: Benefits, Costs, and Strategic Planting. USDA Forest Service, Pacific Southwest Research Station, Albany, CA: 95.
+					</li>
+					<br>
+					<br>
+					<li>
+					McPherson, E.G.; J.R. Simpson; P.J. Peper; S.E. Maco; S.L. Gardner; S.K. Cozad and Q. Xiao. 2006. Midwest Community Tree Guide: Benefits, Costs and Strategic Planting. USDA Forest Service, Pacific Southwest Research Station, Albany, CA: 85.
+					</li>
+					<br>
+					<br>
+					<li>
+					McPherson, E.G.; J.R. Simpson; P.J. Peper; S.L. Gardner; K.E. Vargas; S.E. Maco and Q. Xiao. 2006. Coastal Plain Community Tree Guide: Benefits, Costs, and Strategic Planting. USDA Forest Service, Pacific Southwest Research Station, Albany, CA: 99.
+					</li>
+					<br>
+					<br>
+					<li>
+					McPherson, E.G.; J.R. Simpson; P.J. Peper; S.L. Gardner; K.E. Vargas and Q. Xiao. 2007. Northeast Community Tree Guide: Benefits, Costs, and Strategic Planting. USDA Forest Service, Pacific Southwest Research Station, Center for Urban Forest Research. Davis, CA: 106.
+					</li>
+					<br>
+					<br>
+					<li>
+					Meier, A.K. 1990/91. Strategic landscaping and air-conditioning savings: a literature review, Energy and Buildings, 15-16: 479.
+					</li>
+					<br>
+					<br>
+					<li>
+					Myrup, L.O.; C.E. McGinn and R.G. Flocchini. 1993. An analysis of microclimatic variation in a suburban environment. Atmos. Environ. 27B:129-156.
+					</li>
+					<br>
+					<br>
+					<li>
+					National Renewable Energy Laboratory. 2009. Typical meteorological data, version 2 (TMY2).
+					<br>Available at: <a href="http://rredc.nrel.gov/solar/old_data/nsrdb/tmy2/State.html">http://rredc.nrel.gov/solar/old_data/nsrdb/tmy2/State.html</a>.
+					<br>Retrieved July 20, 2009
+					</li>
+					<br>
+					<br>
+					<li>
+					Nowak, D.J. 1994. Atmospheric carbon dioxide reduction by Chicago’s urban forest. In: McPherson, E.G.; D.J. Nowak and R.A. Rowntree. (Eds.), Chicago’s Urban Forest Ecosystem: Results of the Chicago Urban Forest Climate Project. USDA Forest Service General Technical Report NE-186, Radnor, PA: 83–94.
+					</li>
+					<br>
+					<br>
+					<li>
+					Parker, J.H. 1983. Landscaping to reduce the energy used in cooling buildings. Journal of Forestry 81: 82-84
+					</li>
+					<br>
+					<br>
+					<li>
+					Peper, P.J. and E.G. McPherson. 2003. "Evaluation of four methods for estimating leaf area of isolated trees." Urban Forestry & Urban Greening 2(1): 19-29.
+					</li>
+					<br>
+					<br>
+					<li>
+					Peper, P.J.; E.G. McPherson; J.R. Simpson; K.E. Vargas and Q. Xiao. 2009. Lower Midwest Community Tree Guide: Benefits, Costs, and Strategic Planting. USDA Forest Service, Pacific Southwest Research Station. Albany, CA: 115.
+					</li>
+					<br>
+					<br>
+					<li>
+					Pillsbury, N.H.; J.L. Reimer and R.P. Thompson. 1998. Tree Volume Equations for Fifteen Urban Species in California. Tech. Rpt. 7. Urban Forest Ecosystems Institute, California Polytechnic State University; San Luis Obispo, CA. 56.
+					</li>
+					<br>
+					<br>
+					<li>
+					Ritschard, R.L.; J.W. Hanford and A.O. Sezgen 1992. Single family heating and cooling requirements: assumptions, methods, and summary results. Chicago, Gas Research Institute: 97.
+					</li>
+					<br>
+					<br>
+					<li>
+					Sailor, D.J.; L. Rainer and H. Akbari. 1992. Measured impact of neighborhood tree cover on microclimate, In Proceedings of the 1992 ACEEE Summer Study on Energy Efficiency in Buildings, Vol 9, p. 9.149-9.157, Washington, D.C.: American Council for an Energy-Efficient Economy.
+					</li>
+					<br>
+					<br>
+					<li>
+					Simpson, J.R. 1998. Urban forest impacts on regional cooling and heating energy use: Sacramento County case study. Journal of Arboriculture. 24(4):201-214.
+					</li>
+					<br>
+					<br>
+					<li>
+					Simpson, J.R. 2002. Improved estimates of tree shade effects on residential energy use. 34(10): 1073-1082.
+					</li>
+					<br>
+					<br>
+					<li>
+					Simpson, J.R. and E.G. McPherson. 1998. Simulation of tree shade impacts on residential energy use for space conditioning in Sacramento. Atmospheric Environment: Urban Atmospheres, 32:69-74.
+					</li>
+					<br>
+					<br>
+					<li>
+					Taha, H.; H. Akbari and A.H. Rosenfeld. 1991. Heat island and oasis effects of vegetative canopies: micro-meteorological field-measurements. Theor. Appl. Climatol. 44:123-138.
+					</li>
+					<br>
+					<br>
+					<li>
+					Tritton, L.M. and J.W. Hornbeck. 1982. Biomass Equations for Major Tree Species of the Northeast. USDA Forest Service, NE General Technical Report No. 69. Broomall, PA.: 46.
+					</li>
+					<br>
+					<br>
+					<li>
+					USDA, NRCS. 2008. The PLANTS Database. National Plant Data Center, Baton Rouge, LA 70874-4490 USA.
+					</li>
+					<br>
+					<br>
+					<li>
+					US Department of Energy, EnergyPlus Energy Simulation Software Weather Data for Claremont, CA.
+					<br>Available at: <a href="http://apps1.eere.energy.gov/buildings/energyplus/weatherdata_sources.cfm">http://apps1.eere.energy.gov/buildings/energyplus/weatherdata_sources.cfm</a>.
+					<br>Retrieved July 20, 2009.
+					</li>
+					<br>
+					<br>
+					<li>
+					Vargas K.E.; E.G. McPherson; J.R. Simpson; P.J. Peper; S.L. Gardner and Q. Xiao. 2007. Interior West Tree Guide. USDA Forest Service, Pacific Southwest Research Station, Center for Urban Forest Research. Davis, CA: 105.
+					</li>
+					<br>
+					<br>
+					<li>
+					Vargas, K.E.; E.G. McPherson; J.R. Simpson; P.J. Peper; S.L. Gardner and Q. Xiao. 2008. Tropical Community Tree Guide: Benefits, Costs, and Strategic Planting. USDA Forest Service, Pacific Southwest Research Station, Center for Urban Forest Research. Davis, CA: 109.
+					</li>
+					<br>
+					<br>
+					<li>
+					Wenger, K.F. 1984. Forestry Handbook. John Wiley and Sons, New York, NY.
+					</li>
+					<br>
+					<br>
+					<li>
+					Whittaker, R.H. and G.E. Likens. 1973. Carbon in the biota. pp 281-302. In Woodell, G.M. and E.V. Pecans (Eds.). Proceedings of the 24th Brookhaven Symposium in Biology: May 16-18. 1972. Upton, NY. US Atomic Energy Commission. Technical Info Services. Office of Information Services.
+					</li>
+					<br>
+					<br>
+					<li>
+					Wilcox, S. 2007. 1991-2005 National Solar Radiation Database. Related Information: National Renewable Energy Laboratory (NREL) (Fact Sheet). United States. 2.
+					</li>
+					<br>
+					<br>
+					<li>
+					Wilkin, D. and H.K. Jo. 1993. Landscape carbon budgets and planning guidelines for greenspaces in urban residential lands. Tech. Res. Rep. School of Renewable Natural Resources, University of Arizona, Tucson, AZ. 205 p.
+					</li>
+					<br>
+					<br>
+					<li>
+					Wilkinson, D. 1991. Can photographic methods be used for measuring the light attenuation characteristics of trees in leaf? Landscape and urban planning 20: 347–349.
+					</li>
+				</ul>
+			</p>
+		</td></tr>
+		<tr><td class="body">
+			<br>
+			<br>
+			<br>
+		</td></tr>
+		<tr class="footer"><td class="body">
+			<b><i>2008 US Forest Service</i></b>
+		</td></tr>
+	</table>
+	<br>
+	</div>
+</body>
+
+</html>
