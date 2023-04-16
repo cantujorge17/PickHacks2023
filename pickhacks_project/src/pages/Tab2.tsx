@@ -1,5 +1,5 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonFooter, IonButton, IonIcon } from '@ionic/react';
-import { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle } from '@ionic/react';
+import { IonCard, IonCardContent, IonCardTitle } from '@ionic/react';
 import {  IonItem, IonLabel } from '@ionic/react';
 import './Tab2.css';
 import { openOutline } from 'ionicons/icons';
@@ -33,7 +33,7 @@ const Tab2: React.FC = () => {
         </IonItem>
 
         <IonCard>
-          <IonCardTitle className="ion-text-center">Practices To Avoid</IonCardTitle>
+          <IonCardTitle className="ion-text-center"><b>Practices To Avoid</b></IonCardTitle>
           <IonCardContent>
             <div className="ion-text-center">
               - Tilling the soil
@@ -63,7 +63,7 @@ const Tab2: React.FC = () => {
         </IonItem>
 
         <IonCard>
-          <IonTitle className="ion-text-center">To Avoid Digging</IonTitle>
+          <IonTitle className="ion-text-center"><b>To Avoid Digging</b></IonTitle>
           <IonCardContent>
             <div className="ion-text-center">
               1: Remove weeds and vegetation
@@ -105,7 +105,7 @@ const Tab2: React.FC = () => {
                 federal organizations or follow the links below.
                 <p>&nbsp;</p>
                 <IonButton color="success" href="https://www.nwf.org/Garden-for-Wildlife/About/Native-Plants" target="_blank">
-                  nwf.org &nbsp;
+                  National Wildlife Foundation &nbsp;
                   <IonIcon icon={openOutline}/>
                 </IonButton>
               </div>

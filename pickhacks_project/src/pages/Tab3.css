@@ -1,0 +1,27 @@
+ion-card{
+    --background: #199645;
+    --color: #ffffff;
+}
+
+ion-card-title{
+    --color: #ffffff;
+}
+
+ion-card-subtitle{
+    --color: #ffffff;
+}
+
+ion-toolbar{
+    --background: #05fa63;
+}
+
+ion-button{
+    --color: #ffffff;
+}
+
+ion-col{
+    background-color: #199645;
+    border: solid 10px #ffffff;
+    color: #e3f5e5;
+    text-align: center;
+}
