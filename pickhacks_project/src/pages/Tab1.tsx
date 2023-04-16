@@ -1,8 +1,8 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonFooter, IonButton, IonIcon } from '@ionic/react';
-import { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle } from '@ionic/react';
+import { IonCard, IonCardContent, IonCardHeader, IonCardTitle } from '@ionic/react';
 import {  IonItem, IonLabel } from '@ionic/react';
 import './Tab1.css';
-import { cloudDownloadOutline } from 'ionicons/icons';
+import { openOutline } from 'ionicons/icons';
 
 const Tab1: React.FC = () => {
   return (
@@ -11,7 +11,7 @@ const Tab1: React.FC = () => {
         <IonToolbar>
           <IonTitle>
             <div className="ion-text-center">
-              CO2 Removal
+              Greenwood
             </div>
           </IonTitle>
         </IonToolbar>
@@ -42,16 +42,18 @@ const Tab1: React.FC = () => {
             <IonCardTitle className="ion-text-center">CUFR Tree Carbon Calculator</IonCardTitle>
           </IonCardHeader>
           <IonCardContent className="ion-text-center">
-            <IonButton color="success" href="https://www.fs.usda.gov/ccrc/tool/cufr-tree-carbon-calculator-ctcc">
-              click here to open Carbon Calculator 
+            <IonButton color="success" href="https://www.fs.usda.gov/ccrc/tool/cufr-tree-carbon-calculator-ctcc" target="_blank">  
+              Click here to open Carbon Calculator &nbsp;
+              <IonIcon icon={openOutline} />
             </IonButton>
-            <IonButton color="success" href="https://drive.google.com/drive/folders/1PmwXa6yMfFY1frfOA8UiNYiZdM7eHlMB?usp=share_link">
-              click here to open Help Folder
+            <IonButton color="success" href="https://drive.google.com/drive/folders/1PmwXa6yMfFY1frfOA8UiNYiZdM7eHlMB?usp=share_link" target="_blank">
+              Click here to open Help Files &nbsp; 
+              <IonIcon icon={openOutline} />
             </IonButton>
           </IonCardContent>
         </IonCard>
 
-        <IonItem>
+        <IonItem lines="none">
           <IonLabel>
             <div className="ion-text-wrap">
               <div className="ion-text-center">
@@ -67,11 +69,26 @@ const Tab1: React.FC = () => {
           </IonLabel>
         </IonItem>
 
-      </IonContent>
+        <IonItem lines="none">
+          <IonLabel>
+            <div className="ion-text-wrap">
+              <div className="ion-text-center">
+                Planting trees in the right areas can also reduce building energy costs. Since trees store large 
+                quantities of water, they cool the surrounding areas by several degrees through evaporative 
+                cooling. Additionally, trees planted south, east and west can reduce air conditioning in the 
+                summer while evergreens planted in the north can reduce energy consumption in the winter by 
+                acting as windbreaks. Planting trees accordingly can help buildings reduce their electricity 
+                consumption and become more efficient.
+              </div>
+            </div>
+            <p>&nbsp;</p>
+            <div className="ion-text-center">
+                <img alt="TreePlanting" src="src/assets/TreePlacement.png" width="300" height="500"/>
+            </div>
+          </IonLabel>
+        </IonItem>
 
-      <IonFooter className='ion-padding'>
-        test
-      </IonFooter>
+      </IonContent>
 
     </IonPage>
   );
