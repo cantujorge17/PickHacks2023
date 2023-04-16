@@ -2,7 +2,7 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonFooter, IonBut
 import { IonCard, IonCardContent, IonCardTitle } from '@ionic/react';
 import {  IonItem, IonLabel } from '@ionic/react';
 import './Tab2.css';
-import { openOutline } from 'ionicons/icons';
+import { openOutline, logoLinkedin } from 'ionicons/icons';
 
 const Tab2: React.FC = () => {
   return (
@@ -112,6 +112,20 @@ const Tab2: React.FC = () => {
             </div>
           </IonLabel>
         </IonItem>
+
+        <IonFooter>
+          <IonToolbar className="ion-text-center">
+            Project created by &nbsp;
+            <a href = "https://www.linkedin.com/in/jorge-cantu-677ab8271?trk=people-guest_people_search-card" target="_blank">
+              Jorge Cantu &nbsp;
+              <IonIcon icon={logoLinkedin}/>
+            </a> &nbsp; and &nbsp;
+            <a href="https://www.linkedin.com/in/alexander-saigh-399001238" target="_blank">
+              Alexander Saigh &nbsp;
+              <IonIcon icon={logoLinkedin}/>
+            </a>
+          </IonToolbar>
+        </IonFooter>
 
       </IonContent>
 
