@@ -13,7 +13,7 @@ const Tab2: React.FC = () => {
         </IonToolbar>
       </IonHeader>
 
-      <IonContent fullscreen>
+      <IonContent fullscreen={true}>
         <IonHeader collapse="condense">
           <IonToolbar>
             <IonTitle size="large">Soil</IonTitle>
@@ -63,7 +63,7 @@ const Tab2: React.FC = () => {
         </IonItem>
 
         <IonCard>
-          <IonTitle className="ion-text-center"><b>To Avoid Digging</b></IonTitle>
+          <IonCardTitle className="ion-text-center"><b>To Avoid Digging</b></IonCardTitle>
           <IonCardContent>
             <div className="ion-text-center">
               1: Remove weeds and vegetation

@@ -13,7 +13,7 @@ const Tab3: React.FC = () => {
         </IonToolbar>
       </IonHeader>
 
-      <IonContent fullscreen>
+      <IonContent fullscreen={true}>
 
         <IonHeader collapse="condense">
           <IonToolbar>
@@ -46,7 +46,7 @@ const Tab3: React.FC = () => {
               </div>
               <div>&nbsp;</div>
               <IonButton color="success" href="https://www.thespruce.com/plants-that-attract-hummingbirds-1402212" target="_blank">
-                Plants that attract hummingbirds &nbsp;
+                Plants That Attract Hummingbirds &nbsp;
                 <IonIcon icon={openOutline}/>
               </IonButton>
             </IonCol>
@@ -59,7 +59,7 @@ const Tab3: React.FC = () => {
               </div>
               <div>&nbsp;</div>
               <IonButton color="success" href="https://www.buckinghamshirelandscapegardeners.com/news/how-to-make-your-garden-bat-friendly" target="_blank">
-                Making a bat friendly garden &nbsp;
+                Making A Bat Friendly Garden &nbsp;
                 <IonIcon icon={openOutline}/>
               </IonButton>
             </IonCol>
@@ -75,7 +75,7 @@ const Tab3: React.FC = () => {
               </div>
               <div>&nbsp;</div>
               <IonButton color="success" href="https://modernfarmer.com/2017/02/build-native-bee-hotel/" target="_blank">
-                How to build a native bee hotel &nbsp;
+                How To Build A Native Bee Hotel &nbsp;
                 <IonIcon icon={openOutline}/>
               </IonButton>
             </IonCol>
@@ -88,7 +88,7 @@ const Tab3: React.FC = () => {
               </div>
               <div>&nbsp;</div>
               <IonButton color="success" href="https://herebydesign.net/how-to-build-the-perfect-monarch-butterfly-garden/" target="_blank">
-                How to build a butterfly garden &nbsp;
+                How To Build A Butterfly Garden &nbsp;
                 <IonIcon icon={openOutline}/>
               </IonButton>
             </IonCol>
@@ -132,7 +132,7 @@ const Tab3: React.FC = () => {
               </div>
               <div>&nbsp;</div>
               <IonButton color="success" href="https://www.invasivespeciesinfo.gov/" target="_blank">
-                National Invasive Species Information Center &nbsp;
+                NISIC&nbsp;
                 <IonIcon icon={openOutline}/>
               </IonButton>
             </IonCol>
@@ -150,7 +150,7 @@ const Tab3: React.FC = () => {
               </div>
               <div>&nbsp;</div>
               <IonButton color="success" href="https://www.epa.gov/recycle/composting-home#whatcom" target="_blank">
-              Composting at home &nbsp;
+              Composting At Home &nbsp;
                 <IonIcon icon={openOutline}/>
               </IonButton>
             </IonCol>

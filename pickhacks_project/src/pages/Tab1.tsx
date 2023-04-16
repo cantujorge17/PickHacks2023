@@ -13,7 +13,7 @@ const Tab1: React.FC = () => {
         </IonToolbar>
       </IonHeader>
 
-      <IonContent fullscreen>
+      <IonContent fullscreen={true}>
         <IonHeader collapse="condense">
           <IonToolbar>
             <IonTitle size="large">CO2 Removal</IonTitle>
@@ -39,11 +39,11 @@ const Tab1: React.FC = () => {
           </IonCardHeader>
           <IonCardContent className="ion-text-center">
             <IonButton color="success" href="https://www.fs.usda.gov/ccrc/tool/cufr-tree-carbon-calculator-ctcc" target="_blank">  
-              Click here to open Carbon Calculator &nbsp;
+              Click Here To Open Carbon Calculator &nbsp;
               <IonIcon icon={openOutline} />
             </IonButton>
             <IonButton color="success" href="https://drive.google.com/drive/folders/1PmwXa6yMfFY1frfOA8UiNYiZdM7eHlMB?usp=share_link" target="_blank">
-              Click here to open Help Files &nbsp; 
+              Click Here To Open Help Files &nbsp; 
               <IonIcon icon={openOutline} />
             </IonButton>
           </IonCardContent>
