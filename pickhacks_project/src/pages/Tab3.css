@@ -21,7 +21,11 @@ ion-button{
 
 ion-col{
     background-color: #199645;
-    border: solid 10px #ffffff;
+    border: solid 10px #e3f5e5;
     color: #e3f5e5;
     text-align: center;
+}
+
+ion-content{
+    --ion-background-color: #e3f5e5
 }

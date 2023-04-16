@@ -9,11 +9,7 @@ const Tab1: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>
-            <div className="ion-text-center">
-              Greenwood
-            </div>
-          </IonTitle>
+          <IonTitle className="ion-text-center"><b>Greenwood</b></IonTitle>
         </IonToolbar>
       </IonHeader>
 
